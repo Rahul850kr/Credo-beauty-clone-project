@@ -1,0 +1,47 @@
+#head{
+    height: 80px;
+        width: 40%;
+        border-bottom: 3px solid black;
+        font-size: 30px;
+        margin: auto;
+        font-family: 'Crimson Pro', serif;
+        
+}
+#details{
+    height: 550px;
+    width: 30%;
+    margin: auto;
+        margin-top: 50px;
+        font-size: 15px;
+        color: #231F20;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+}
+.enterdata{
+        width: 99%;
+        height: 40px;
+        border: 0.05px solid grey;
+}
+.star{
+    color: red;
+}
+#submit{
+        margin-top: 30px;
+        background-color: #be6274;
+        color: white;
+        border: none;
+        width: 100%;
+        height: 40px;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+}
+#lastline{
+    text-align: right;
+}
+#greenlogin{
+    color: #03A196;
+}
+#logindirectory{
+    text-decoration: none;
+}

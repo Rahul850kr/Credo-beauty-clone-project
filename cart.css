@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    height: 70%;
+    width: auto;
+    border: 1px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto);
+    background-color: rgb(169, 231, 231);
+}
+button{
+    height: 30px;
+    width: 150px;
+}
+input{
+    height: 23px;
+    width: 150px;
+}
+h1{
+    text-align: center;
+    
+}

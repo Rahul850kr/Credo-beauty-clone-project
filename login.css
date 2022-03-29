@@ -1,0 +1,57 @@
+#head{
+    height: 80px;
+    width: 40%;
+    border-bottom: 3px solid black;
+    font-size: 30px;
+    margin: auto;
+    font-family: 'Crimson Pro', serif;
+}
+#input{
+    height: 300px;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #231F20;
+    font-family: 'Roboto', sans-serif;
+}
+input{
+    width: 98%;
+    height: 45px;
+    border: 0.1px solid grey;
+}
+#pass{
+    margin-left: 180px;
+    color: #03A196;
+}
+#login{
+    margin-top: 30px;
+    background-color: #be6274;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+h4{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.below{
+    color: #3f7e88;
+    font-family: 'Roboto', sans-serif;
+}
+.empass{
+    color: #231f20;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+#lastline{
+    margin-top: -10px;
+}
+#password{
+    margin-top: 30px;
+}
+.signupdirectory{
+    text-decoration: none;
+}

@@ -8,67 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <style>
-        #head{
-            height: 80px;
-            width: 40%;
-            border-bottom: 3px solid black;
-            font-size: 30px;
-            margin: auto;
-            font-family: 'Crimson Pro', serif;
-        }
-        #input{
-            height: 300px;
-            width: 30%;
-            margin: auto;
-            margin-top: 50px;
-            font-size: 18px;
-            color: #231F20;
-            font-family: 'Roboto', sans-serif;
-        }
-        input{
-            width: 98%;
-            height: 45px;
-            border: 0.1px solid grey;
-        }
-        #pass{
-            margin-left: 180px;
-            color: #03A196;
-        }
-        #login{
-            margin-top: 30px;
-            background-color: #be6274;
-            color: white;
-            border: none;
-        }
-        h4{
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-            
-        }
-        .below{
-            color: #3f7e88;
-            font-family: 'Roboto', sans-serif;
-        }
-        .empass{
-            color: #231f20;
-            font-size: 15px;
-            font-weight: bold;
-            
-        }
-        #lastline{
-            margin-top: -10px;
-        }
-        #password{
-            margin-top: 30px;
-        }
-        a{
-            text-decoration: none;
-        }
-       
-        
-        
-    </style>
+<link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div id="head">
@@ -81,22 +21,20 @@
                     EMAIL
                 </p>
             </div>
-            <input type="text">
+            <input type="email" id="email">
             <div id="password">
                 <P class="empass">
                     PASSWORD <span id="pass">FORGOT YOUR PASSWORD?</span>
                 </P>
             </div>
-            <input type="text"><br>
+            <input type="password" id="password1"><br>
             <input type="submit" value="LOGIN" id="login">
         </div>
     </form>
-    <h4>NEW CUSTOMER? <a href="signup.html"><span class="below">SIGN UP</span></a></h4>
-    <h4 id="lastline">SHOPPED BEFORE? <a href="signup.html"><span class="below">SIGN UP </span></a> TO ACTIVATE YOUR ACCOUNT</h4>
+    <h4>NEW CUSTOMER? <a class="signupdirectory" href="signup.html"><span class="below">SIGN UP</span></a></h4>
+    <h4 id="lastline">SHOPPED BEFORE? <a class="signupdirectory" href="signup.html"><span class="below">SIGN UP </span></a> TO ACTIVATE YOUR ACCOUNT</h4>
     
 </body>
 </html>
 
-<script>
-
-</script>
+<script src="login.js"></script>

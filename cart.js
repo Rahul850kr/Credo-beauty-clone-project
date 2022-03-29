@@ -1,8 +1,8 @@
-var cartData1 = JSON.parse(localStorage.getItem(""));//hair
-var cartData2 = JSON.parse(localStorage.getItem(""));//makup
-var cartData3 = JSON.parse(localStorage.getItem(""));//fragrance
-var cartData4 = JSON.parse(localStorage.getItem(""));//home
-var cartData5 = JSON.parse(localStorage.getItem(""));//bestseller
+var cartData1 = JSON.parse(localStorage.getItem("hairDAta"));//hair
+var cartData2 = JSON.parse(localStorage.getItem("makeupData"));//makup
+var cartData3 = JSON.parse(localStorage.getItem("fragranceData"));//fragrance
+var cartData4 = JSON.parse(localStorage.getItem("homeData"));//home
+var cartData5 = JSON.parse(localStorage.getItem("bestsellerData"));//bestseller
 //hair
 var total = cartData1.reduce(function (sum, elem, index, arr) {
     console.log(elem.price);

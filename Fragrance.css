@@ -1,0 +1,38 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    margin-left: 90px;
+    margin-right: 150px;
+    
+  
+  }
+  h1{
+      color:#418993;
+      margin-top: 150px;
+      margin-left: 100px;
+  }
+  #front{
+      color: grey;
+      margin-left: 100px;
+  }
+
+  #photo:hover{
+     height: 330px;
+     width: 330px;
+  }
+  #photo{
+      height: 300px;
+      width: 300px;
+    
+      
+  }
+  .Adjust{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      line-height: 35px;
+      width: 300px;
+      
+  }

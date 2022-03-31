@@ -26,7 +26,7 @@ function login()
         document.querySelector("#password1").value="";
         alert("Login Successful");
 
-        // window.location.href="home.html";
+        window.location.href="home/home.html";
 
     }
     else{

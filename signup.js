@@ -19,10 +19,12 @@ function signup()
 
     alert("Sign up successful");
 
-    document.querySelector("#input1").value= ""
-    document.querySelector("#input2").value= ""
-    document.querySelector("#input3").value= ""
-    document.querySelector("#input4").value= ""
+    document.querySelector("#input1").value= "";
+    document.querySelector("#input2").value= "";
+    document.querySelector("#input3").value= "";
+    document.querySelector("#input4").value= "";
+
+    window.location.href="login.html"
 
     
 }

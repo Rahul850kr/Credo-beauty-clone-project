@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay </title>
+</head>
+<body>
+    <h1></h1>
+    <input type="number" id="otp" placeholder="enter your otp"/>
+    <input type="number" id="val" placeholder="payment"/>
+    <button>Pay</button>
+</body>
+</html>
+<script>
+    var cashVal= JSON.parse(localStorage.getItem("cartTotalPayValue"))
+    var cash = document.querySelector("#val").textContent=cashVal;
+
+    document.querySelector("h1").textContent="payment value " + cashVal;
+     console.log(JSON.parse(localStorage.getItem("cartTotalPayValue")))
+     document.querySelector("button").addEventListener("click",pay);
+     function pay() {
+ 
+    var otp = document.querySelector("#otp").value;
+   
+    if(otp == "1234")
+    {
+        alert("Payment Success!");
+    }else
+    {
+        alert("Payment Failure!");
+    }
+   //console.log(cash=cashVal)
+  
+}
+
+
+</script>

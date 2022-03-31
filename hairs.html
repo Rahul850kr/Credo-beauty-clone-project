@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+    src="https://kit.fontawesome.com/7b63b22604.js" crossorigin="anonymous" > 
+        </script>
+
+
+</head>
+
+<style>
+
+#container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        width: 100%;
+
+        justify-content: center;
+      }
+
+      .box {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 10px;
+      }
+
+      .textbox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      #prodimg {
+        width: 100%;
+      }
+      #type {
+        text-align: center;
+
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #be6274;
+      }
+      #brandname {
+        text-align: center;
+        font-size: small;
+        margin: 0px;
+        margin-bottom: 10px;
+      }
+      #prodname {
+        text-align: center;
+        font-weight: 400;
+        margin: 0px;
+        margin-bottom: 10px;
+      }
+      #price {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: medium;
+      }
+      #available {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 10px;
+        color: gray;
+      }
+      #butdiv {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+      }
+      #butdiv > button {
+        background-color: white;
+        color: #be6274;
+        border: 0px;
+        border-radius: 3px;
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+      }
+      #butdiv > button:hover {
+        background-color: #be6274;
+        color: white;
+      }
+
+      .bighead {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+      #sticky{
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+           top: 0;
+           background-color: #fff;
+      }
+
+      #sticky:hover{
+        cursor: pointer;
+      }
+
+
+
+
+.chngeanimation {
+         height: 40px;
+         width: 100%;
+         margin-top: 0px;
+         overflow: hidden;
+         font-family: "Poppins", sans-serif;
+         background-color: teal;
+       }
+       .chngeanimation {
+         font-size: 15px;
+         font-weight: 600;
+         color: rgb(238, 231, 231);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       .chngeanimation::after {
+         content: " ";
+         color: #fff;
+         background-color: teal;
+         animation: textrotate 2s linear infinite;
+         -webkit-animation: textrotate 2s linear infinite;
+       }
+       @keyframes textrotate {
+         0% {
+           content: "In-Store and Online Use Card: CLEAN10 For 10% OFF 1st purchase | details ";
+         }
+         50% {
+           content: "";
+         }
+         100% {
+           content: "Free Shiping over $50 | Refer a freind and get $10";
+         }
+        }
+
+        .navBar {
+        width: 100%;
+        height: 110px;
+        border: 1 px solid red;
+      }
+      #upper1 {
+        width: 100%;
+        height: 70px;
+
+        display: grid;
+        grid-template-columns: 1fr 1.8fr 1fr;
+        justify-content: center;
+        align-items: center;
+      } 
+
+      #lefttext {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #lefttext > div:hover {
+        color: #be6274;
+        border-bottom: 2px solid #be6274;
+      }
+      #lefttext > div {
+        padding: 8px;
+      }
+      #righttext {
+        margin: 5px;
+        color: gray;
+      }
+      #righttext > button {
+        border: 0px;
+      }
+      #middle1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #lower {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 0.25px solid rgb(220, 218, 218);
+        border-top: 0.25px solid rgb(220, 218, 218);
+      }
+      #lower > div {
+        padding: 10px;
+        font-weight: 600;
+      }
+      #lower > div:last-child {
+        color: #418993;
+      }
+      #lower > div:hover {
+        color: #be6274;
+        border-bottom: 2px solid #be6274;
+      }
+      #logod {
+        height: 70px;
+      }
+      i{
+          cursor: pointer;
+      }
+
+
+
+
+
+
+      #head1st {
+        width: 96%;
+        height: 80px;
+        margin-left: 40px;
+        color: teal;
+        font-size: x-large;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      #head2nd {
+        width: 96%;
+        height: 50px;
+        font-size: 12px;
+        display: flex;
+        margin-left: 40px;
+        margin-bottom: 10px;
+      }
+      #head2nd > p {
+        color: rgb(84, 80, 80);
+        font-size: medium;
+      }
+      #head3rd {
+        width: 93%;
+        height: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-left: 40px;
+        margin-bottom: 100px;
+      }
+      .head3-1 {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .head3-2 {
+        display: flex;
+        width: 40%;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+
+      select {
+        width: 100px;
+        height: 20px;
+        border: 1px solid rgb(95, 95, 95);
+        padding: 1px;
+        font-size: x-small;
+        color: gray;
+      }
+      #clear {
+        font-weight: 700;
+        font-size: medium;
+        padding: 3px;
+        border-bottom: 1px solid rgb(84, 82, 82);
+      }
+
+      #head4th {
+        width: 99%;
+        height: 50px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #head4th > button {
+        width: 200px;
+        height: 50px;
+        background-color: rgb(0, 38, 62);
+        color: white;
+        font-size: 20px;
+        border: 0px;
+      }
+      #head4th > button:hover {
+        background-color: white;
+        color: rgb(0, 38, 62);
+        border: 1px solid rgb(0, 38, 62);
+      }
+      #head5th {
+        width: 99%;
+        height: 35px;
+        background-color: rgb(190, 98, 115);
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 50px;
+      }
+      #head6th {
+        width: 70%;
+        margin: auto;
+      }
+      #head6th > div > p {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+     
+
+
+    </style>
+
+<body>   
+        
+        <div id="sticky">
+    <div class="chngeanimation">
+        <h1 class="textchange"></h1>
+      </div>
+     
+      <div class="navBar">
+        <div id="upper1">
+          <div id="lefttext">
+            <div>Stored And Services</div>
+            <div>Rewards</div>
+            <div>Chat Live</div>
+          </div>
+          <div id="middle1">
+            <img
+              id="logod"
+              src="data:image/png;base64,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"
+              alt="logo"
+            />
+          </div>
+          <div id="rigthtext1">
+            <i class="fas fa-search" id="i1"></i>
+            <input type="text" id="serchbar" placeholder="Serach" />
+            <abbr title="LogIn || SignUp"><a id="i1" onclick="window.location.href='sign_up.html'"
+              ><i class="far fa-user"></i
+            ></a></abbr>
+           <abbr title="Wishlist"> <a id="i1" onclick="window.location.href='wishlist.html'"
+            ><i class="far fa-heart"></i
+          ></a></abbr>
+           <abbr title="Cart"> <a id="i1" onclick="window.location.href='cart.html'"
+            ><i class="fas fa-shopping-cart"></i
+          ></a></abbr>
+          </div>
+        </div>
+        <div id="lower">
+            <div onclick="window.location.href='#'">BestSellers</div>
+            <div onclick="window.location.href='#'">New</div>
+            <div onclick="window.location.href='#'">Brands</div>
+            <div onclick="window.location.href='#'">Skincare</div>
+            <div onclick="window.location.href=''">Makeup</div>
+            <div onclick="window.location.href='hair.html'">Hair</div>
+            <div onclick="window.location.href='#'">Bath & Body</div>
+            <div onclick="window.location.href='#'">Frangance</div>
+            <div onclick="window.location.href='#'">Gift</div>
+            <div onclick="window.location.href='#'">Sale</div>
+            <div onclick="window.location.href='#'">Featured</div>
+            <div onclick="window.location.href=''">Why Clean?</div>
+          </div>
+        </div>
+    </div>
+      
+
+        <div class="mainHead">
+           
+          <div id="head1st">
+            <h1 class="makeup">Hair</h1>
+          </div>
+
+
+          <div id="head2nd">
+            <p>Home</p>
+            <p style="font-weight: 1500">/</p>
+            <p>Hair</p>
+          </div>
+
+
+          <div id="head3rd">
+            <div class="head3-1">
+              <select id="s1" onchange="filterbrand()">
+                <option value="">BRAND</option>
+                <option value="MAYA CHIP">MAYA CHIP</option>
+                <option value="CEREMONIA">CEREMONIA</option>
+                <option value="CAPTAIN BLANKENSHIP">CAPTAIN BLANKENSHIP</option>
+                <option value="INNERSENSE ORGANIC BEAUTY">
+                  INNERSENSE ORGANIC BEAUTY
+                </option>
+                <option value="EVOLVH">EVOLVH</option>
+              </select>
+              <select name="Concern" id="s2">
+                <option value="">CONCERN</option>
+              </select>
+              <select name="Category" id="s3">
+                <option value="">CATEGORY</option>
+              </select>
+              <select name="ingredient" id="s4">
+                <option value="">INGREDIENT</option>
+              </select>
+              <select id="s5" onchange="filterprice()">
+                <option value="0">PRICE</option>
+                <option value="10 to 20">10$ to 20$</option>
+                <option value="21 to 30">21$ to 30$</option>
+                <option value="31 to 40">31$ to 404$</option>
+                <option value="41 to 50">41$ to 50$</option>
+                <option value="51 to 60">51$ to 60$</option>
+                <option value="61 to 70">61$ to 70$</option>
+                <option value="71 to 80">71$ to 80$</option>
+                <option value="81 to 90">81$ to 90$</option>
+              </select>
+              <p id="clear" onclick="clearfilter()">Clear Filters</p>
+            </div>
+            <div class="head3-2">
+              <p>Sort By :</p>
+              <select id="s6" onchange="sortPrice()">
+                <option value="0">RELEVENCE</option>
+                <option value="high">Price: High to Low</option>
+                <option value="low">Price: Low to High</option>
+                <option value="A">Tital: A to Z</option>
+                <option value="Z">Tital:Z to A</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="container"></div>
+
+          <div id="head4th">
+            <button id="b1">Load More</button>
+          </div>
+
+          <div id="head5th">Hair</div>
+
+          <div id="head6th">
+            <div>
+              <p>
+                Discover our range of clean, natural, non-toxic, organic skincare &
+                beauty products at Credo, and enjoy free samples of other safe and
+                effective products with every purchase. Our clean, natural and
+                non-toxic makeup collection is a better way to achieve a fresh,
+                flattering glow. Enhance your features with our safe, effective,
+                cruelty free eye makeup, lipstick, foundation and other beauty
+                products.
+              </p>
+            </div>
+            <div>
+              <p>
+                Credo offers a huge variety of gentle makeup products for skin types
+                ranging from normal to sensitive. contain naturally-derived or safe
+                synthetic chemicals, the foundations, concealers, mascaras,
+                eyeshadows, lipsticks, setting powders and makeup removers are safe
+                for long term use. Credo offers clean beauty and makeup products from
+                brands like Westman Atelier, Kosas, RMS Beauty and Kjaer Weis.
+              </p>
+            </div>
+            <div>
+              <p>
+                Our selection of clean, natural makeup is infused with nourishing
+                ingredients. The botanicals provide nutrition while the pigmented
+                makeup stays put on your skin.
+              </p>
+            </div>
+            <div>
+              <p>
+                Credo provides the largest clean beauty skin care assortment
+                formulated without the ingredients found on The Dirty List™. All
+                products have documentation for ingredient authenticity and proof of
+                claims. Every product at Credo is a safer, cleaner and often vegan
+                version of something you already love, and is an easy way to feel your
+                best. Order online or let us help you curate your personal selection
+                of Credo’s natural, clean makeup at Credo stores in Boston, Chicago,
+                Dallas, Los Angeles, New York, San Diego and San Francisco. Believe in
+                better beauty with Credo.
+              </p>
+            </div>
+         
+        
+          </div>
+
+      
+        </div>
+
+
+</body>
+</html>
+
+
+
+<script>
+
+  
+var hairdata = [
+     {   
+        image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/08.02.21_ECOMM_STILLS_BEAUTY_GOOP-HAIR-SERUM_DROPPER_384_x270.jpg?v=1631811203",
+        image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/TheLaurenStyle-79_1.jpg?v=1633240353",
+        brandname : "MAYA CHIP",
+        productName : "Power Fol Eyelash | Eyebrow Treatment",
+         price :  60,
+         available : "3 more color"
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-GuavaRescueSpray_720x.jpg?v=1629846425",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_GuavaRescue-03.jpg?v=1629846315",
+         brandname : "CEREMONIA",
+         productName : "Guava Rescue Spray",
+         price : 40,
+         available : "2 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/ceremoniaguavaleave-inconditioneratcredobeauty_720x.jpg?v=1634588218",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_GuavaLeaveIn-04.jpg?v=1629846685",
+         brandname : "CEREMONIA",
+         productName : "Guava Leave in Conditioner",
+         price : 55,
+         available : "1 more color"
+            
+        },
+        {
+            image_url:"https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_Aceite-05_x540.jpg?v=1629846661",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-Aceite_900x.jpg?v=1629846421",
+         brandname : "CEREMONIA" ,
+         productName : "Aceite de Moska",
+         price : 50,
+         available : "2 more color"
+            
+        },
+        {
+            image_url:"https://cdn.shopify.com/s/files/1/0637/6147/products/seashineconditionerhero_900x.jpg?v=1625251524",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/SeaShineConditioner_x540.jpg?v=1625251516",
+         brandname : "CAPTAIN BLANKENSHIP",
+         productName : "Sea Shine Conditioner",
+         price : 30,
+         available : "4 more color"
+            
+        },
+        {
+            image_url:"https://cdn.shopify.com/s/files/1/0637/6147/products/08.02.21_ECOMM_STILLS_BEAUTY_GOOP-HAIR-SERUM_124_720x.jpg?v=1631811179",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/08.02.21_ECOMM_STILLS_BEAUTY_GOOP-HAIR-SERUM_DROPPER_384.jpg?v=1631811203",
+         brandname : "MAYA CHIP",
+         productName : "GOOPGLOW Restore + Shine Hair Serum",
+         price : 65,
+         available : "4 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-Champu_900x.jpg?v=1629846580",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Copyof210428_Ceremonia_Shot_16_CHAMPU_BOTTLE_0355_FS-V2_x540.jpg?v=1629846388",
+         brandname : "CEREMONIA",
+         productName : "Champú de Yucca & Witch Hazel Shampoo",
+         price : 45,
+         available : "3 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/seashineconditionerhero_900x.jpg?v=1625251524",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/SeaShineShampoo_x540.jpg?v=1625251505",
+         brandname : "CAPTAIN BLANKENSHIP",
+         productName : "Sea Shine Shampoo",
+         price : 55,
+         available : "5 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Sweet-Spirit-Leave-in-Conditioner-10oz.jpg?v=1604626177",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Hydrating-Cream-Conditioner-Refill-Pouch-32oz_x540.png?v=1631226184",
+         brandname : "INNERSENSE ORGANIC BEAUTY",
+         productName : "Sweet Spirit Leave In Conditioner",
+         price : 66,
+         available : "2 more color"
+            
+        },
+        {
+            image_url:"https://cdn.shopify.com/s/files/1/0637/6147/products/Hydrating-Cream-Conditionerr-10oz_900x.jpg?v=1604626318",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Sweet-Spirit-Leave-in-Conditioner-2oz_x540.jpg?v=1604626248",
+         brandname : "INNERSENSE ORGANIC BEAUTY",
+         productName : "Hydrating Cream Conditioner",
+         price : 25,
+         available : "3 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/G.ToxScalpScrub-Travel.jpg?v=1614271738",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/G.Tox_Scalp_Scrub_Ingredient_Square_x540.jpg?v=1570295724",
+         brandname : "MAYA CHIP",
+         productName : "G.Tox Himalayan Salt Scalp Scrub Shampoo",
+         price : 66,
+         available : "5 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Hydrating-Cream-Hairbath-10oz.jpg?v=1604626322",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Hydrating-Cream-Hairbath-Refill-Pouch-32oz_x540.png?v=1631226096",
+         brandname : "INNERSENSE ORGANIC BEAUTY",
+         productName : "Hydrating Cream Hairbath",
+         price : 50,
+         available : "2 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/8.5_oz_UltraShine_Shampoo_copy.jpg?v=1568675085",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/swatch_UltraShine_Shampoo_copy_1_x540.jpg?v=1574603975",
+         brandname : "EVOLVH",
+         productName : "UltraShine Moisture Shampoo",
+         price : 30,
+         available : "1 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Pure-Harmony-Hairbath-10oz.jpg?v=1604626232",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Pure-Harmony-Hairbath-Refill-Pouch-32oz_x540.png?v=1631226173",
+         brandname : "INNERSENSE ORGANIC BEAUTY",
+         productName : "Pure Harmony Hairbath",
+         price : 60,
+         available : "3 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/image_6719fe9a-8b9f-48be-a1d1-f5e29b64b397.png?v=1568718233",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/swatch_UltraShine_Conditioner_copy_1_x540.jpg?v=1574603994",
+         brandname : "JOSH ROSEBROOK",
+         productName : "UltraShine Moisture Conditioner",
+         price : 10,
+         available : "2 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/reverie_milk_at_credo_beauty.jpg?v=1568672381",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/CredoMilk2_x540.jpg?v=1631744664",
+         brandname : "INNERSENSE ORGANIC BEAUTY",
+         productName : "Milk Anti-Frizz Leave-In Nourishing Treatment",
+         price : 26,
+         available : "4 more color"
+            
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Color-Awakening-Hairbath-10oz_900x.jpg?v=1604626183",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Color-Awakening-Hairbath-Refill-Pouch-32oz_x540.png?v=1631226055",
+            brandname: "INNERSENSE ORGANIC BEAUTY",
+            productName: "Color Awakening Hairbath",
+            price: 24,
+            available : "2 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Color-Radiance-Daily-Conditioner-10oz.jpg?v=1604626241",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Color-Radiance-Daily-Conditioner-Refill-Pouch-32oz_x540.png?v=1631226100",
+            brandname: "INNERSENSE ORGANIC BEAUTY",
+            productName: "Color Radiance Daily Conditioner",
+            price: 32,
+            availabler : "3 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Color-Awakening-Hairbath-10oz.jpg?v=1604626183",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Pure-Inspiration-Daily-Conditioner-Refill-Pouch-32oz_x540.png?v=1631226129",
+            brandname: "INNERSENSE ORGANIC BEAUTY",
+            productName: "Pure Inspiration Daily Conditioner",
+            price: 58,
+            available : "3 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Quiet-Calm-Curl-Controll-10oz_900x.jpg?v=1604626238",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/ABInnersense27458copy_x540.jpg?v=1594428546",
+            brandname: "INNERSENSE ORGANIC BEAUTY",
+            productName: "Quiet Calm Curl Control",
+            price: 34,
+            available : "4 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/I-Create-Lift-Volumizing-Foam-6oz_900x.jpg?v=1604626189",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/i-create-lift-volumizing-foam-6oz-evergreen-4-innersense-organic-beauty_x540.jpg?v=1623789642",
+            brandname: "INNERSENSE ORGANIC BEAUTY",
+            productName: "I Create Lift Volumizing Foam",
+            price: 33,
+            available : "4 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/I-Create-Lift-Volumizing-Foam-6oz_900x.jpg?v=1604626189",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/i-create-lift-volumizing-foam-6oz-evergreen-4-innersense-organic-beauty_x540.jpg?v=1623789642",
+            brandname: "INNERSENSE ORGANIC BEAUTY",
+            productName: "I Create Lift Volumizing Foam",
+            price: 33,
+            available : "4 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/I-Create-Lift-Volumizing-Foam-6oz_900x.jpg?v=1604626189",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/i-create-lift-volumizing-foam-6oz-evergreen-4-innersense-organic-beauty_x540.jpg?v=1623789642",
+            brandname: "INNERSENSE ORGANIC BEAUTY",
+            productName: "I Create Lift Volumizing Foam",
+            price: 33,
+            available : "4 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/HAR102.jpg?v=1625687370",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/HAR104_x540.jpg?v=1625687375",
+            brandname: "JOSH ROSEBROOK",
+            productName: "Mermaid Dry Shampoo",
+            price: 20,
+            available : "6 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/UrsaMajor.GoEasyShampoo_900x.jpg?v=1571820563",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/UrsaMajor.GoEasyShampoo.Travel_x540.jpg?v=1571820692",
+            brandname: "MAYA CHIP",
+            productName: "Go Easy Daily Shampoo",
+            price: 57,
+            available : "2 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/kaia_naturals_overnight_dry_shampoo_blonde_at_credo_beauty.jpg?v=1568899383",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/overnight_dry_shampoo_with_model_1.png?v=1568899383",
+            brandname: "EVOLVH",
+            productName: "Overnight Dry Shampoo",
+            price: 50,
+            available : "3 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/kaia_naturals_overnight_dry_shampoo_blonde_at_credo_beauty.jpg?v=1568899383",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/overnight_dry_shampoo_with_model_1.png?v=1568899383",
+            brandname: "EVOLVH",
+            productName: "Overnight Dry Shampoo",
+            price: 50,
+            available : "3 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/kaia_naturals_overnight_dry_shampoo_blonde_at_credo_beauty.jpg?v=1568899383",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/overnight_dry_shampoo_with_model_1.png?v=1568899383",
+            brandname: "EVOLVH",
+            productName: "Overnight Dry Shampoo",
+            price: 50,
+            available : "3 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/2101_SuperHair_30Day_Bottle_2000x2000_0adc5f73-0261-4393-8516-aa8eb5c715f5.jpg?v=1617822664",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/2101-SuperHair_Editorial_2000x2000_36465d8b-2212-4008-ae6e-5bed979cbc1e_x540.jpg?v=1617822701",
+            brandname: "JOSH ROSEBROOK",
+            productName: "SuperHair Daily Hair Nutrition",
+            price: 33,
+            available : "7 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/UrsaMajor.GoEasyShampoo_900x.jpg?v=1571820563",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/UrsaMajor.GoEasyShampoo.Travel_x540.jpg?v=1571820692",
+            brandname: "MAYA CHIP",
+            productName: "Go Easy Daily Shampoo",
+            price: 57,
+            available : "2 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Lift_bf820c78-9df0-4bb1-b3f7-027f6a66c611_900x.jpg?v=1582327433",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/Fragrance_Alt_image_600x600_4_791a293a-1727-44ba-a022-eb9926ade5db.jpg?v=1570148897",
+            brandname: "JOSH ROSEBROOK",
+            productName: "Lift Hair Texture and Volume",
+            price: 30,
+            available : "4 more color"
+
+        },
+        {
+            image_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/i-create-finish-10oz-evergreen-46-innersense-organic-beauty_x540.jpg?v=1623789628",
+            image2_url: "https://cdn.shopify.com/s/files/1/0637/6147/products/I-Create-Finish-10oz_900x.jpg?v=1604626180",
+            brandname: "INNERSENSE ORGANIC BEAUTY",
+            productName: "I Create Finish",
+            price: 26,
+            available : "2 more color"
+
+        }
+        ]
+   
+
+  var cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+  var WishlistArr = JSON.parse(localStorage.getItem("Wishlist")) || [];
+  
+      displayData(hairdata);
+
+function displayData(hairdata) {
+    document.querySelector("#container").innerHTML = "";
+
+    hairdata.map(function (data) {
+      var div = document.createElement("div");
+      div.setAttribute("class", "box");
+
+      var imgdiv = document.createElement("div");
+      imgdiv.setAttribute("class", "imgbox");
+
+      var image = document.createElement("img");
+      image.setAttribute("src", data.image_url);
+      image.setAttribute("id", "produceimg");
+
+      image.addEventListener("mouseenter", function () {
+        image.src = data.image2_url;
+      });
+
+      image.addEventListener("mouseout", function () {
+        image.src = data.image_url;
+      });
+
+      image.setAttribute("id", "prodimg");
+
+      var textdiv = document.createElement("div");
+      textdiv.setAttribute("class", "textbox");
+
+      var type = document.createElement("p");
+      type.textContent = "Bestseller";
+      type.setAttribute("id", "type");
+
+      var brandname = document.createElement("p");
+      brandname.textContent = data.brandname;
+      brandname.setAttribute("id", "brandname");
+
+      var productName = document.createElement("h2");
+      productName.textContent = data.productName;
+      productName.setAttribute("id", "prodname");
+
+      var price = document.createElement("h5");
+      price.textContent = "$" + data.price;
+      price.setAttribute("id", "price");
+
+      var available = document.createElement("p");
+      available.textContent = data.available;
+      available.setAttribute("id", "available");
+
+      var butdiv = document.createElement("div");
+      butdiv.setAttribute("id", "butdiv");
+
+      var cart = document.createElement("button");
+      cart.setAttribute("id", "cartbut");
+      cart.setAttribute("class", `fas fa-cart-plus`);
+      cart.addEventListener("click", function () {
+        addTocart(data);
+        cart.setAttribute("class", "fas fa-check-circle");
+        cart.style.background = "#ff2e63";
+        cart.style.color = "white";
+      });
+
+      var wishlist = document.createElement("button");
+      wishlist.setAttribute("id", "wishbut");
+      wishlist.setAttribute("class", `fas fa-heart`);
+      wishlist.addEventListener("click", function () {
+        addToWishlist(data);
+        wishlist.setAttribute("class", "fas fa-check-circle");
+        wishlist.style.background = "#ff2e63";
+        wishlist.style.color = "white";
+      });
+
+      imgdiv.append(image);
+      butdiv.append(cart, wishlist);
+      textdiv.append(type, brandname, productName, price, available, butdiv);
+      div.append(imgdiv, textdiv);
+      document.querySelector("#container").append(div);
+    });
+  }
+  
+  
+  function filterbrand() {
+    var selected = document.querySelector("#s1").value;
+    if (selected != 0) {
+      var filteredbrandList = hairdata.filter(function (elem) {
+        return elem.brandname == selected;
+      });
+    }
+    if (selected == 0) {
+      var filteredbrandList = hairdata.filter(function (elem) {
+        return elem;
+      });
+    }
+    displayData(filteredbrandList);
+  }
+
+  function filterprice() {
+    var selected = document.querySelector("#s5").value;
+
+    if (selected == "0") {
+      var filteredpricedList = hairdata.filter(function (elem) {
+        return elem;
+      });
+    }
+
+    if (selected == "10 to 20") {
+      var filteredpricedList = hairdata.filter(function (elem) {
+        return elem.price >= 10 && elem.price <= 20;
+      });
+    }
+    if (selected == "21 to 30") {
+      var filteredpricedList = hairdata.filter(function (elem) {
+        return elem.price >= 21 && elem.price <= 30;
+      });
+    }
+    if (selected == "31 to 40") {
+      var filteredpricedList = hairdata.filter(function (elem) {
+        return elem.price >= 31 && elem.price <= 40;
+      });
+    }
+    if (selected == "41 to 50") {
+      var filteredpricedList = hairdata.filter(function (elem) {
+        return elem.price >= 41 && elem.price <= 50;
+      });
+    }
+    if (selected == "51 to 60") {
+      var filteredpricedList = hairdata.filter(function (elem) {
+        return elem.price >= 51 && elem.price <= 60;
+      });
+    }
+    if (selected == "61 to 70") {
+      var filteredpricedList = hairdata.filter(function (elem) {
+        return elem.price >= 61 && elem.price <= 70;
+      });
+    }
+    if (selected == "71 to 80") {
+      var filteredpricedList = hairdata.filter(function (elem) {
+        return elem.price >= 71 && elem.price <= 80;
+      });
+    }
+    if (selected == "81 to 90") {
+      var filteredpricedList = hairdata.filter(function (elem) {
+        return elem.price >= 81 && elem.price <= 90;
+      });
+    }
+    displayData(filteredpricedList);
+  }
+  function clearfilter() {
+    displayData(hairdata);
+  }
+
+  function sortPrice() {
+    var selected = document.querySelector("#s6").value;
+
+    if (selected == "low") {
+      hairdata.sort(function (a, b) {
+        return a.price - b.price;
+      });
+    }
+    if (selected == "high") {
+      hairdata.sort(function (a, b) {
+        return b.price - a.price;
+      });
+    }
+    if (selected == "A") {
+      hairdata.sort(function (a, b) {
+        return a.productName.charCodeAt(0) - b.productName.charCodeAt(0);
+      });
+    }
+    if (selected == "Z") {
+      hairdata.sort(function (a, b) {
+        return b.productName.charCodeAt(0) - a.productName.charCodeAt(0);
+      });
+    }
+    displayData(hairdata);
+  }
+
+  
+  function addTocart(data) {
+    cartArr.push(data);
+    localStorage.setItem("cart", JSON.stringify(cartArr));
+    alert("Successfully Added");
+    console.log(cartArr);
+  }
+  
+  function addToWishlist(data) {
+    WishlistArr.push(data);
+    localStorage.setItem("Wishlist", JSON.stringify(WishlistArr));
+    alert("Added Succefully");
+    console.log(WishlistArr);
+  }
+
+
+</script>

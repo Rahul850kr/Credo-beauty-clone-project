@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 40%;
+            text-align: center;
+            color: #418993;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            padding: 10px;
+            cursor: pointer;
+            margin: auto;
+            letter-spacing: 2.6px;
+        }
+        #ic{
+            font-size: 25px;
+    
+        }
+        #p2{
+            text-align: center;
+            color:#418993;
+            font-family: 'Roboto',sans-serif;
+            font-size: 50px;
+            padding: 35px;
+            margin: auto;
+            font-weight: bold;
+        }
+        #p2a{
+            text-align: center;
+            color:#18244a;
+            font-family: 'Roboto',sans-serif;
+            font-size: 50px;
+            padding: 50px;
+            margin: auto;
+            font-weight: bold;
+        }
+        img{
+            width: 100%;
+            cursor: pointer;
+        }
+        #container1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        #container1>div{
+            text-align: center;
+            font-family: sans-serif;
+            letter-spacing: 2.6px;
+            /* font-weight: bold; */
+            font-size: 20px;
+            position: relative;
+            width: auto;
+
+        }
+        div>p:hover{
+            cursor: pointer;
+            color: #418993;
+        }
+        .outer{
+            position: relative;
+            height: 100%;
+            width: 30%;
+        }
+        .outer img,.inner img{
+            width: 100%;
+
+        }
+        .inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none; 
+
+        }
+        .outer:hover .inner{
+            display: block;
+        }
+        #barbtn{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            
+        }
+        button{
+         justify-content: space-around;
+         border: none;
+         background-color: white;
+         cursor: pointer;
+        letter-spacing: 2.6px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"><p>Where All Beauty is Clean Beauty<i class="fa fa-angle-down" id="ic"></i></p> 
+    </div>
+    <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/EXA-ColorCorrectors-CredoHP-banner-FINAL_1920x.jpg?v=1647987584" alt="">
+     <p id="p2">Clean Beauty Favorites</p>
+     
+    <!-- first with img hover  -->
+
+     <div id="container1">
+         <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_prep_prime_d6fda939-4cb8-4020-9ede-3d0d13ad15fa_720x.jpg?v=1640804913" alt="">
+            <div class="inner">
+                <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_SkincareUnder40_hovor_540x.png?v=1640804902" alt="">
+            </div>
+         <p>SHOP <br> SKINCARE</p>  
+          </div>
+         <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_MU_f7afde63-726c-4069-8f52-6e38f280e22d_720x.png?v=1640805051" alt="">
+            <div class="inner">
+                <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_MU_hovor_f04ea7b0-f245-40fb-8bba-4882e4826f9d_540x.png?v=1640805056" alt="">
+            </div>
+            <p>SHOP <br> MAKEUP</p>
+        </div>
+         <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/bXQ0N6v8_720x.jpg?v=1648151652" alt="">
+            <div class="inner">
+                <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/kfFFkfP8_540x.jpg?v=1648151681" alt="">
+            </div>
+            <p>SHOP <br>HAIRCARE</p>
+        </div>
+         <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_SumerBodycare2_720x.jpg?v=1640805383" alt="">
+            <div class="inner">
+                <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_bath_body_hovor_540x.png?v=1641244033" alt="">
+            </div>
+            <p>SHOP <br>BODYCARE</p>
+        </div>
+     </div>
+
+     <!-- Shop Bestsellers -->
+      <p id="p2a">Shop Bestsellers</p>
+
+    <!-- bar 1.2  -->
+        <div id="barbtn">
+            <button id="btn">VIWE ALL</button>
+            <button id="btn">TRANDING NOW</button>
+            <button id="btn">ONLY AT CREDO</button>
+            <button id="btn">MASCARA</button>
+            <button id="btn">FACIAL SERUMS</button>
+            <button id="btn">HAIR STYLING</button>
+        </div>
+       
+   
+
+
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,70 +1,14 @@
-var cartData1 = JSON.parse(localStorage.getItem("hairDAta"));//hair
-var cartData2 = JSON.parse(localStorage.getItem("makeupData"));//makup
-var cartData3 = JSON.parse(localStorage.getItem("fragranceData"));//fragrance
-var cartData4 = JSON.parse(localStorage.getItem("homeData"));//home
-var cartData5 = JSON.parse(localStorage.getItem("bestsellerData"));//bestseller
-//hair
-var total = cartData1.reduce(function (sum, elem, index, arr) {
-    console.log(elem.price);
-    sum = sum + Number(elem.price);
+var cartData1 = JSON.parse(localStorage.getItem("makeupData"));
+
+
+var total = cartData1.reduce(function (sum, el, index, arr) {
+    console.log(el.price);
+    sum = sum + Number(el.price);
     return sum;
 }, 0);
 
 
 var length = cartData1.length;
-
-//makup
-
-var total = cartData2.reduce(function (sum, elem, index, arr) {
-    console.log(elem.price);
-    sum = sum + Number(elem.price);
-    return sum;
-}, 0);
-
-
-
-var length = cartData2.length;
-
-//fragrance
-
-
-var total = cartData3.reduce(function (sum, elem, index, arr) {
-    console.log(elem.price);
-    sum = sum + Number(elem.price);
-    return sum;
-}, 0);
-
-
-
-var length = cartData3.length;
-
-//home
-
-
-var total = cartData4.reduce(function (sum, elem, index, arr) {
-    console.log(elem.price);
-    sum = sum + Number(elem.price);
-    return sum;
-}, 0);
-
-
-
-var length = cartData4.length;
-
-//bestseller
-
-
-var total = cartData5.reduce(function (sum, elem, index, arr) {
-    console.log(elem.price);
-    sum = sum + Number(elem.price);
-    return sum;
-}, 0);
-
-
-
-var length = cartData5.length;
-
-
 
 
 var btn_promo = document
@@ -167,7 +111,7 @@ document.querySelector(
     "p"
 ).innerText = ` you have ${length} items in cart and  total is Rs ${total}`;
 
-//value got ocheck out page
+//value got of check out page
 document.querySelector("#checkOut").addEventListener("click", gotocartval);
 function gotocartval() {
     localStorage.setItem("cartTotalPayValue", JSON.stringify(total));
@@ -175,145 +119,45 @@ function gotocartval() {
 
 }
 
-// hair page
-
-hairData.map(function (elem, index) {
-    var box = document.createElement("div");
-
-    var img = document.createElement("img");
-    img.src = elem.image_url;
-
-    var name = document.createElement("p");
-    name.textContent = elem.name;
-
-    var price = document.createElement("p");
-    price.innerText = elem.price;
-
-    var btn = document.createElement("button");
-    btn.innerText = "Remove";
-    btn.addEventListener("click", function () {
-        removeItem(elem, index);
-    });
-
-    box.append(img, name, price, btn);
-
-    document.querySelector("#container").append(box);
-});
-
-function removeItem(elem, index) {
-    console.log(elem, index);
-    hairData.splice(index, 1);
-
-
-    localStorage.setItem("hairData", JSON.stringify(hairData));
-    window.location.reload();
-}
-
 
 // makup page
 
-makupData.map(function (elem, index) {
+cartData1.map(function (el, index) {
     var box = document.createElement("div");
 
-    var img = document.createElement("img");
-    img.src = elem.image_url;
+    var img11 = document.createElement("img");
+    img11.src = el.image2_url;
+
+    var productName = document.createElement("p");
+    productName.textContent = el.productName;
 
     var name = document.createElement("p");
-    name.textContent = elem.name;
+    name.textContent = el.brandname;
 
     var price = document.createElement("p");
-    price.innerText = elem.price;
+    price.innerText = el.price;
 
     var btn = document.createElement("button");
     btn.innerText = "Remove";
     btn.addEventListener("click", function () {
-        removeItem(elem, index);
+        removeItem(el, index);
     });
 
-    box.append(img, name, price, btn);
+    box.append(img11, name, productName, price, btn);
 
     document.querySelector("#container").append(box);
 });
 
-function removeItem(elem, index) {
-    console.log(elem, index);
-    makupData.splice(index, 1);
+function removeItem(el, index) {
+    console.log(el, index);
+    cartData1.splice(index, 1);
 
 
-    localStorage.setItem("makupData", JSON.stringify(makupData));
+    localStorage.setItem("makeupData", JSON.stringify(cartData1));
     window.location.reload();
 }
 
 
-// fragrance page
-
-
-fragranceData.map(function (elem, index) {
-    var box = document.createElement("div");
-
-    var img = document.createElement("img");
-    img.src = elem.image_url;
-
-    var name = document.createElement("p");
-    name.textContent = elem.name;
-
-    var price = document.createElement("p");
-    price.innerText = elem.price;
-
-    var btn = document.createElement("button");
-    btn.innerText = "Remove";
-    btn.addEventListener("click", function () {
-        removeItem(elem, index);
-    });
-
-    box.append(img, name, price, btn);
-
-    document.querySelector("#container").append(box);
-});
-
-function removeItem(elem, index) {
-    console.log(elem, index);
-    fragranceData.splice(index, 1);
-
-
-    localStorage.setItem("fragranceData", JSON.stringify(fragranceData));
-    window.location.reload();
-}
-
-// home page
-
-
-homeData.map(function (elem, index) {
-    var box = document.createElement("div");
-
-    var img = document.createElement("img");
-    img.src = elem.image_url;
-
-    var name = document.createElement("p");
-    name.textContent = elem.name;
-
-    var price = document.createElement("p");
-    price.innerText = elem.price;
-
-    var btn = document.createElement("button");
-    btn.innerText = "Remove";
-    btn.addEventListener("click", function () {
-        removeItem(elem, index);
-    });
-
-    box.append(img, name, price, btn);
-
-    document.querySelector("#container").append(box);
-});
-
-function removeItem(elem, index) {
-    console.log(elem, index);
-    homeData.splice(index, 1);
-
-
-    localStorage.setItem("homeData", JSON.stringify(homedata));
-    window.location.reload();
-}
 
 //    var arr =[1,2,3,4]
 //    console.log(arr.splice(0,1)) // []

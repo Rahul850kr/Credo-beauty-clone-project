@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+v     <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,131 @@
 
 </head>
 
-<style>
+<style
+
+<>
+
+#sticky{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+     top: 0;
+     background-color: #fff;
+}
+
+
+
+.chngeanimation {
+   height: 40px;
+   width: 100%;
+   margin-top: 0px;
+   overflow: hidden;
+   font-family: "Poppins", sans-serif;
+   background-color: teal;
+ }
+ .chngeanimation {
+   font-size: 15px;
+   font-weight: 600;
+   color: rgb(238, 231, 231);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .chngeanimation::after {
+   content: " ";
+   color: #fff;
+   background-color: #418993;
+   animation: textrotate 2s linear infinite;
+   -webkit-animation: textrotate 2s linear infinite;
+ }
+ @keyframes textrotate {
+   0% {
+     content: "In-Store and Online Use Card: CLEAN10 For 10% OFF 1st purchase | details ";
+   }
+   50% {
+     content: "";
+   }
+   100% {
+     content: "Free Shiping over $50 | Refer a freind and get $10";
+   }
+  }
+
+  .navBar {
+  width: 100%;
+  height: 110px;
+  border: 1 px solid red;
+}
+#upper1 {
+  width: 100%;
+  height: 70px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 1fr;
+  justify-content: center;
+  align-items: center;
+} 
+
+#lefttext {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#lefttext > div:hover {
+  color: #be6274;
+  border-bottom: 2px solid #be6274;
+}
+#lefttext > div {
+  padding: 8px;
+}
+#righttext {
+  margin: 5px;
+  color: gray;
+}
+#righttext > button {
+  border: 0px;
+}
+#middle1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lower {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 0.25px solid rgb(220, 218, 218);
+  border-top: 0.25px solid rgb(220, 218, 218);
+}
+#lower > div {
+  padding: 10px;
+  font-weight: 600;
+}
+#lower > div:last-child {
+  color: #418993;
+}
+#lower > div:hover {
+  color: #be6274;
+  border-bottom: 2px solid #be6274;
+}
+#logod {
+  height: 70px;
+}
+i{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 
 #container {
         display: grid;
@@ -114,113 +238,6 @@
 
       #sticky:hover{
         cursor: pointer;
-      }
-
-
-
-
-.chngeanimation {
-         height: 40px;
-         width: 100%;
-         margin-top: 0px;
-         overflow: hidden;
-         font-family: "Poppins", sans-serif;
-         background-color: teal;
-       }
-       .chngeanimation {
-         font-size: 15px;
-         font-weight: 600;
-         color: rgb(238, 231, 231);
-         display: flex;
-         justify-content: center;
-         align-items: center;
-       }
-       .chngeanimation::after {
-         content: " ";
-         color: #fff;
-         background-color: teal;
-         animation: textrotate 2s linear infinite;
-         -webkit-animation: textrotate 2s linear infinite;
-       }
-       @keyframes textrotate {
-         0% {
-           content: "In-Store and Online Use Card: CLEAN10 For 10% OFF 1st purchase | details ";
-         }
-         50% {
-           content: "";
-         }
-         100% {
-           content: "Free Shiping over $50 | Refer a freind and get $10";
-         }
-        }
-
-        .navBar {
-        width: 100%;
-        height: 110px;
-        border: 1 px solid red;
-      }
-      #upper1 {
-        width: 100%;
-        height: 70px;
-
-        display: grid;
-        grid-template-columns: 1fr 1.8fr 1fr;
-        justify-content: center;
-        align-items: center;
-      } 
-
-      #lefttext {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
-
-      #lefttext > div:hover {
-        color: #be6274;
-        border-bottom: 2px solid #be6274;
-      }
-      #lefttext > div {
-        padding: 8px;
-      }
-      #righttext {
-        margin: 5px;
-        color: gray;
-      }
-      #righttext > button {
-        border: 0px;
-      }
-      #middle1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #lower {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: 0.25px solid rgb(220, 218, 218);
-        border-top: 0.25px solid rgb(220, 218, 218);
-      }
-      #lower > div {
-        padding: 10px;
-        font-weight: 600;
-      }
-      #lower > div:last-child {
-        color: #418993;
-      }
-      #lower > div:hover {
-        color: #be6274;
-        border-bottom: 2px solid #be6274;
-      }
-      #logod {
-        height: 70px;
-      }
-      i{
-          cursor: pointer;
       }
 
 
@@ -353,7 +370,7 @@
           <div id="rigthtext1">
             <i class="fas fa-search" id="i1"></i>
             <input type="text" id="serchbar" placeholder="Serach" />
-            <abbr title="LogIn || SignUp"><a id="i1" onclick="window.location.href='signup.html'"
+            <abbr title="LogIn || SignUp"><a id="i1" onclick="window.location.href='sign_up.html'"
               ><i class="far fa-user"></i
             ></a></abbr>
            <abbr title="Wishlist"> <a id="i1" onclick="window.location.href='wishlist.html'"
@@ -369,10 +386,10 @@
             <div onclick="window.location.href='#'">New</div>
             <div onclick="window.location.href='#'">Brands</div>
             <div onclick="window.location.href='#'">Skincare</div>
-            <div onclick="window.location.href='makeup.html'">Makeup</div>
+            <div onclick="window.location.href=''">Makeup</div>
             <div onclick="window.location.href='hair.html'">Hair</div>
             <div onclick="window.location.href='#'">Bath & Body</div>
-            <div onclick="window.location.href='Fragrance.html'">Frangance</div>
+            <div onclick="window.location.href='#'">Frangance</div>
             <div onclick="window.location.href='#'">Gift</div>
             <div onclick="window.location.href='#'">Sale</div>
             <div onclick="window.location.href='#'">Featured</div>
@@ -984,14 +1001,14 @@ function displayData(hairdata) {
     cartArr.push(data);
     localStorage.setItem("cart", JSON.stringify(cartArr));
     alert("Successfully Added");
-    console.log(cartArr);
+    //console.log(cartArr);
   }
   
   function addToWishlist(data) {
     WishlistArr.push(data);
     localStorage.setItem("Wishlist", JSON.stringify(WishlistArr));
     alert("Added Succefully");
-    console.log(WishlistArr);
+   // console.log(WishlistArr);
   }
 
 

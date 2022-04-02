@@ -1,1 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <script
+    src="https://kit.fontawesome.com/7b63b22604.js" crossorigin="anonymous" > 
+        </script>
+    <title>Document</title>
+    <style>
+
+         /* -------------------navbar start -----------------*/
+         #sticky{
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+           top: 0;
+           background-color: #fff;
+      }
+
+
+
+    .AnimationPart {
+         height: 40px;
+         width: 100%;
+         margin-top: 0px;
+         overflow: hidden;
+         font-family: "Poppins", sans-serif;
+         background-color: teal;
+       }
+       .AnimationPart {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 17px;
+         font-weight: 550;
+         color: rgb(226, 215, 215);
+        
+       }
+       .AnimationPart::after {
+         content: " ";
+         color: white;
+         background-color: teal;
+         animation: textrotate 2s linear infinite;
+         -webkit-animation: textrotate 2s linear infinite;
+       }
+       @keyframes textrotate {
+         0% {
+           content: "In-Store and Online Use Card: CLEAN10 For 10% OFF 1st purchase || details ";
+         }
+         100% {
+           content: "Free Shiping over $50 | Refer a freind and get $10";
+         }
+        }
+
+        .NavigationBar {
+        width: 100%;
+        height: 110px;
+        border: 3 px solid red;
+      }
+      #upper1 {
+        display: grid;
+        grid-template-columns: 2fr 4fr 2fr;
+
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+
+        
+      } 
+
+      #lefttext {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #lefttext > div:hover {
+        color: brown;
+        border-bottom: 2px solid brown;
+      }
+      #lefttext > div {
+        padding: 8px;
+      }
+      #righttext {
+        margin: 6px;
+        color: gray;
+      }
+      #righttext > button {
+        border: 2px;
+      }
+      #middle1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #lower {
+        width: 100%;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+      }
+      #lower > div {
+        padding: 10px;
+        font-weight: 650;
+      }
+      #lower > div:last-child {
+        color: teal;
+      }
+      #lower > div:hover {
+        color: brown;
+        border-bottom: 2px solid brown;
+      }
+      #logocenter {
+        height: 72px;
+      }
+
+      i{
+         margin-left: 12px;
+          cursor: pointer;
+      }
+
+        #div1{
+            width: 40%;
+            text-align: center;
+            color: #418993;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            padding: 10px;
+            cursor: pointer;
+            margin: auto;
+            letter-spacing: 2.6px;
+        }
+        a{
+            text-decoration: none;
+            color: #418993;
+            
+        }
+        #ic{
+            font-size: 25px;
+    
+        }
+        #p2{
+            text-align: center;
+            color:#418993;
+            font-family: 'Roboto',sans-serif;
+            font-size: 50px;
+            padding: 35px;
+            margin: auto;
+            font-weight: bold;
+        }
+        #p2a{
+            text-align: center;
+            color:#18244a;
+            font-family: 'Roboto',sans-serif;
+            font-size: 50px;
+            padding: 50px;
+            margin: auto;
+            font-weight: bold;
+        }
+        img{
+            width: 100%;
+            cursor: pointer;
+        }
+        #container1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        @media only screen and (max-width: 600px){
+          #container1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+          }
+          
+        }
+        #container1>div{
+            text-align: center;
+            font-family: sans-serif;
+            letter-spacing: 2.6px;
+            /* font-weight: bold; */
+            font-size: 20px;
+            position: relative;
+            width: auto;
+           
+           
+
+        }
+        div>p:hover{
+            cursor: pointer;
+            color: #418993;
+        }
+        .outer{
+            position: relative;
+            height: 100%;
+            width: 30%;
+        }
+        .outer img,.inner img{
+            width: 100%;
+
+        }
+        .inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none; 
+
+        }
+        .outer:hover .inner{
+            display: block;
+        }
+        #barbtn{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            
+        }
+        button{
+         justify-content: space-around;
+         border: none;
+         background-color: white;
+         cursor: pointer;
+        letter-spacing: 2.6px;
+        
+        }
+        button:active{
+             text-decoration:  underline;
+             
+        }
+        button:hover{
+          color: #be6274;
+        }
+        #container2{
+          display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            padding-top: 30px
+        }
+        @media only screen and (max-width: 600px){
+          #container2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+          }
+          
+        }
+        #container2>div{
+            text-align: center;
+            font-family: sans-serif;
+            letter-spacing: 2.6px;
+            /* font-weight: bold; */
+            font-size: 20px;
+            position: relative;
+            width: auto;
+            position: sticky;
+
+        }
+        #brandname{
+          font-family:Crimson Text;
+          font-size: 15px;
+          background-color:#be6274;
+          color: #fff
+
+        }
+        #btndivvv{
+          margin: auto;
+          /* border: 2px solid red; */
+          text-align: center;
+        }
+        #btnv{
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          padding: 20px;
+        }
+        #timg{
+          display: flex;
+          height: 700px;
+          width: 100%;
+          margin-top: 20px;
+
+          /* border:  1px solid blueviolet; */
+          
+        
+
+        }
+        #timg>div{
+          /* border: 1px solid navy; */
+          height: 680px;
+          width: 50%;
+          background-color: #f0e0e8;
+        }
+
+        .ppp{
+          font-size: x-large;
+          font-family:sans-serif;
+          padding: 30px;
+          padding-top: 10px;
+        }
+        .btntimg{
+          background-color: black;
+          height: 50px;
+          width: 40%;
+          color: white;
+          margin-left: 30px;
+        }
+  
+        #divcleanbt{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: auto;
+          gap: 25px;
+          padding-top: 30px;
+          /* border: 1px solid black; */
+        }
+       
+        .pc{
+          font-family: sans-serif;
+          font-size: larger;
+          padding: 5px;
+        }
+        #btncc{
+           margin-left: 100px;
+           text-decoration: underline;
+           font-size: 20px;
+        }
+        #divstd{
+          height: 500px;
+          width: 100%;
+          background-color: #f8f8f8;
+          margin-top: 35px;
+          display: flex;
+        }
+        #divstd>div{
+          height: 500px;
+          width: 50%;
+         
+          
+        }
+        .imglast{
+          height: 300px;
+          width: 50%;
+          padding-top: 100px;
+          padding-left: 100px;
+        }
+        .btnlast{ 
+          height: 50px;
+          width: 40%;
+          background-color: black;
+          font-size: 20px;
+          color: #fff;
+        }
+        .btnlast:hover{
+          background-color: #fff;
+        }
+        #p2aa{
+            text-align: center;
+            color:#18244a;
+            font-family: 'Roboto',sans-serif;
+            font-size: 40px;
+            padding: 50px;
+            padding-bottom: 5px;
+            
+            font-weight: bold;
+        }
+        .pcccl{
+          font-size: 25px;
+        }
+        #imgldiv{
+          width: 40%;
+         margin-left: 200px;
+          height: 100px;
+          padding-right: 10px;
+          width: 20%;
+          margin-top: 10px;
+        }
+        #lastdivho{
+          display: flex;
+          height: 120px;
+          width: 100%;
+          background-color: #f8f8f8;
+        
+          margin-top: 70px;
+        }
+        .lastimgho{
+          height: 30px;
+          width: 150px;
+          padding: 20px;
+        }
+        #lp{
+          width: 60%;
+          font-size: 30px;
+        }
+       
+        
+        
+       
+       
+
+    </style>
+</head>
+<body>
+
+  <div id="sticky">
+    <div class="AnimationPart">
+        <h1> </h1>
+      </div>
+     
+      <div class="NavigationBar">
+        <div id="upper1">
+          <div id="lefttext">
+            <div><b>Stored And Services</b></div>
+            <div> <b>Rewards</b>
+            </div>
+            <div><b>Chat Live</b></div>
+          </div>
+          <div id="middle1">
+            <a href="home.html">
+              <img
+              id="logocenter"
+              src="images.jpg"  
+            alt="logo"
+            />
+            </a>
+          </div>
+          <div id="rigthtext1">
+            <i class="fas fa-search" ></i>
+            <input type="text" id="serchbar" placeholder="Serach" />
+            <abbr title="LogIn || SignUp"><a id="i1" onclick="window.location.href='signup.html'"
+              ><i class="far fa-user"></i
+            ></a></abbr>
+           <abbr title="Wishlist"> <a  onclick="window.location.href='wishlist.html'"
+            ><i class="far fa-heart"></i
+          ></a></abbr>
+           <abbr title="Cart"> <a  onclick="window.location.href='cart.html'"
+            ><i class="fas fa-shopping-cart"></i
+          ></a></abbr>
+          </div>
+        </div>
+        <div id="lower">
+            <div onclick="window.location.href='#'">BestSellers</div>
+            <div onclick="window.location.href='#'">New</div>
+            <div onclick="window.location.href='#'">Brands</div>
+            <div onclick="window.location.href='#'">SkinCare</div>
+            <div onclick="window.location.href='makeup.html'">Makeup</div>
+            <div onclick="window.location.href='hairs.html'">Hair</div>
+            <div onclick="window.location.href='#'">Bath & Body</div>
+            <div onclick="window.location.href='Fragrance.html'">Fragrance</div>
+            <div onclick="window.location.href='#'">Gift</div>
+            <div onclick="window.location.href='#'">Sale</div>
+            <div onclick="window.location.href='#'">Featured</div>
+            <div onclick="window.location.href=''">Why Clean?</div>
+          </div>
+        </div>
+    </div>
+      
+
+
+
+    
+    <div id="div1"><a href="credostandard.html"><p>Where All Beauty is Clean Beauty<i class="fa fa-angle-down" id="ic"></i></p> </a> 
+    </div>
+   <a href="HFBCC.HTML"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/EXA-ColorCorrectors-CredoHP-banner-FINAL_1920x.jpg?v=1647987584" alt=""></a> 
+     <p id="p2">Clean Beauty Favorites</p>
+     
+    <!-- first with img hover  -->
+
+     <div id="container1">
+         <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_prep_prime_d6fda939-4cb8-4020-9ede-3d0d13ad15fa_720x.jpg?v=1640804913" alt="">
+            <div class="inner">
+               <a href="skin.html"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_SkincareUnder40_hovor_540x.png?v=1640804902" alt="">
+            </div>
+         <p>SHOP <br> SKINCARE</p></a> 
+          </div>
+         <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_MU_f7afde63-726c-4069-8f52-6e38f280e22d_720x.png?v=1640805051" alt="">
+            <div class="inner">
+              <a href="makeup.html"> <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_MU_hovor_f04ea7b0-f245-40fb-8bba-4882e4826f9d_540x.png?v=1640805056" alt="">
+            </div>
+            <p>SHOP <br> MAKEUP</p></a>
+        </div>
+         <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/bXQ0N6v8_720x.jpg?v=1648151652" alt="">
+            <div class="inner">
+              <a href="hairs.html"> <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/kfFFkfP8_540x.jpg?v=1648151681" alt="">
+            </div>
+            <p>SHOP <br>HAIRCARE</p></a>
+        </div>
+         <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_SumerBodycare2_720x.jpg?v=1640805383" alt="">
+            <div class="inner">
+              <a href="Fragrance.html"> <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/ButtomHeroBuckets_bath_body_hovor_540x.png?v=1641244033" alt="">
+            </div>
+            <p>SHOP <br>FRAGRANCE</p></a>
+        </div>
+     </div>
+
+     <!-- Shop Bestsellers -->
+      <p id="p2a">Shop Bestsellers</p>
+
+    <!-- bar 1.2  -->
+        <div id="barbtn">
+            <button >VIEW ALL</button>
+            <button >TRANDING NOW</button>
+            <button >ONLY AT CREDO</button>
+            <button >MASCARA</button>
+            <button >FACIAL SERUMS</button>
+            <button >HAIR STYLING</button>
+        </div>
+       
+        <div id="container2">
+        
+          <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/HR_22_SheepsClothing_Digital_SPP_4_Ingredients_2000x2000-final_900x.jpg?v=1647652684" alt="">
+             <div class="inner">
+                <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/HenryRose_50ML_2K_Sheeps_Transparent_900x.png?v=1647670246" alt="">
+             </div>
+             <button>new</button><button>Only at Credo</button>
+             <p id="brandname">Henry Rose</p>
+          <p>Sheep's Clothing Eau de Parfum<br>$ 120.00</p>  
+           </div>
+          <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/04_Red-Orange_Swatch_White_x320.png?v=1647483710" alt="">
+             <div class="inner">
+                 <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/01_Red-Orange_Open_Whitecopy_x320.png?v=1647483649" alt="">
+             </div> 
+             <button>new</button><button>Only at Credo</button>
+             <p id="brandname">Exa</p>
+             <p>High Fidelity Balancing Color Corrector <br>$ 27</p>
+         </div>
+          <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/JMP_JR_012622_010_CoolRose_900x.jpg?v=1648268306" alt="">
+             <div class="inner">
+                 <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/JMP_JR_012622_020_Swatch_CoolRose_900x.jpg?v=1648223681" alt="">
+             </div>
+             <button>new</button><button>Only at Credo</button>
+             <p id="brandname">Jones Road</p>
+             <p>Shimmer Face Oil<br>$ 34.00</p>
+         </div>
+          <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/ARCSMEAR_540x.jpg?v=1644346246" alt="">
+             <div class="inner">
+                 <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/1TheLaurenStyle-103_900x.jpg?v=1644346246" alt="">
+             </div>
+             <button>new</button>
+             <p id="brandname"> Maya Chia </p> 
+             <p>The Advanced Response Complex Face <br> Neck Cream <br> $ 125.00  </p>
+         </div>
+      </div>
+
+      <p id="p2a">New Arrivals</p>
+
+
+      <div id="container2">
+        
+        <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/DreamTeamSet-Product_540x.jpg?v=1648268302" alt="">
+           <div class="inner">
+              <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/DreamTeamSet-Hero_900x.jpg?v=1648268333" alt="">
+           </div>
+           <button>new</button><button>Only at Credo</button>
+           <p id="brandname">Tower 28</p>
+        <p>Dream Team Bestseller Lip and Cheek Set<br>$ 26.00</p>  
+         </div>
+        <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/IndieLee_RetinolAlternativeCream_onwhite.131389_900x.jpg?v=1648268309" alt="">
+           <div class="inner">
+               <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/IndieLee_RetinolAlternativeCream_ColorTexture_1_540x.jpg?v=1648268329" alt="">
+           </div> 
+           <button>new</button><button>Only at Credo</button>
+           <p id="brandname">Indie Lee</p>
+           <p>Retinol Alternative Cream <br>$ 72.00</p>
+       </div>
+       
+        <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/Alpyn_LipMask_01_900x.jpg?v=1648235705" alt="">
+           <div class="inner">
+               <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/Alpyn_LipMask_04_540x.jpg?v=1648268402" alt="">
+           </div>
+           <button>new</button><button>Only at Credo</button>
+           <p id="brandname">Alpyn Beauty</p>
+           <p>Willow & Sweet Agave Plumping Lip Mask<br>$ 28.00</p>
+       </div>
+       <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/JMP_JR_012622_010_CoolRose_900x.jpg?v=1648268306" alt="">
+        <div class="inner">
+            <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/JMP_JR_012622_020_Swatch_CoolRose_900x.jpg?v=1648223681" alt="">
+        </div>
+        <button>new</button><button>Only at Credo</button>
+        <p id="brandname">Jones Road</p>
+        <p>Shimmer Face Oil<br>$ 34.00</p>
+      </div>
+        
+    </div>
+
+
+    <div id="btndivvv">
+      <button id="btnv">VIEW ALL</button>
+    </div>
+
+    <div id="timg">
+      <div>
+        <p id="p2a">Up to $20 OFF.
+          <br> Ends Sunday.</p>
+          <p class="ppp">For a limited time only, use your Credo Rewards <br> points to get a discount on your best-in-clean <br> favorites. 250 points  for $10 off. 500 points for <br> $20 off.</p>
+          <button class="btntimg" >SHOP BESTSELLER</button>
+      </div>
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/MostLoved_900x.png?v=1648684040" alt="">
+      </div>
+    </div>
+    
+
+    <p id="p2a">Clean Beauty Highlights</p>
+
+    <div id="divcleanbt">
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/HP_HighlightBucket-Niacinamide_540x.jpg?v=1646107704" alt="">
+        <p class="pc">Niacinamide is a water-soluble form of Vitamin B3, which works as an anti-inflammatory to help brighten, repair and firm skin</p>
+        <button id="btncc">SHOP NIACINAMIDE</button>
+      </div>
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/Lotion_Bar_lifestyle_square_hires_900x.jpg?v=1648137062" alt="">
+        <p class="pc">NEW.Insprired by the beauty of Mexico, hydreatin cacti is the proima ingredient of Latina-founded Nopalera's luxurious handmade product.</p>
+        <button id="btncc">SHOP NOPALERA</button>
+      </div>
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/MAR1-HP-Square-1080x1080_900x.jpg?v=1646170589" alt="">
+        <p class="pc">these beauty change markers are chnaging the industry for the better</p>
+        <button id="btncc">MEET THE FOUNDERS</button>
+      </div>
+    </div>
+
+    <div id="divcleanbt">
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/SquareContentBucket-LiveChat_Ciara_540x.jpg?v=1634240761" alt="">
+        <p class="pc">Skin Concerns,shade mactching,and more </p>
+        <button id="btncc">CHAT NOW</button>
+      </div>
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/JonesRoad_HP_SquareContentBucket-2022_540x.jpg?v=1645738714" alt="">
+        <p class="pc">Makeup Application featuring Jones Road.Get the brand's signature no-makeup look.</p>
+        <button id="btncc">BOOK NOW</button>
+      </div>
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/Flushed_031_9a03fb2e-6411-4e89-a2af-2b065ec4ec2f_540x.jpg?v=1647469210" alt="">
+        <p class="pc">ONLY AT CREDO.The best-selling Miracle Balm in new warm pink shade with subtle golden flecks.</p>
+        <button id="btncc">SHOP IT</button>
+      </div>
+    </div>
+
+
+    <div id="divstd">
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/Clean-Seal-TM-with-5-pillars_330x330_790bd993-f21f-48ca-b9bc-dfbd33ffab78_540x.png?v=1644935060" alt="" class="imglast">
+      </div>
+      <div>
+        <p id="p2aa">The Credo Clean Standard™</p>
+        <p class="pcccl">Our mission is to change the way people think about <br> ingredients and products they put on their bodies. We want <br> to create a safer, more sustainable, more ethical beauty <br> industry. We call it “Clean Beauty.”</p>
+        <button class="btnlast">LEARN MORE</button>
+      </div>
+    </div>
+
+    <div id="lastdivho">
+     <div id="imgldiv"><img src="https://cdn.shopify.com/s/files/1/0637/6147/files/1280px-Fast_Company_logo.svg_7397ec59-81ff-4d61-b0a4-ef29b7a2d139_210x.png?v=1637006907" alt="" class="lastimgho"></div> 
+      <div id="lp">
+        <p>
+          “
+          World's Most Innovative Beauty Company,,</p>
+      </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
 

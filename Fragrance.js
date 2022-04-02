@@ -5,13 +5,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/MYTHBottle_720x.jpg?v=1646182358",
-        image2:
+        image2_url:
        " https://cdn.shopify.com/s/files/1/0637/6147/products/MYTHBox_x320.jpg?v=1646197884",
-        p:
+       brandname:
         "ELLIS BROOKLYN",
-        h2:
+        productName:
         "MYTH Eau de Parfum",
-        h4:
+        price:
         " 105"
  
     },
@@ -21,13 +21,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/HenryRose_WebImages_FloraCarnivora_2000x2000_Opaque_720x.png?v=1642625452",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/Henry_Rose_Aug21_Spray_Flora_Carnivora_R_2000x2000_V3_AltCaps_Opaque_x320.png?v=1642625436",
-        p:
+        brandname:
         "HENRY ROSE",
-        h2:
+        productName:
         "Flora Carnivora Eau de Parfum",
-        h4:
+        price:
         " 120"
  
     },
@@ -38,13 +38,13 @@ var fragranceData=[
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/HR_FINEFRAGRANCE_QUEENS_MONSTERS_OG_720x.png?v=1642625447",
 
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/Henry_Rose_Aug21_Spray_Queens_and_Monsters_R_2000x2000_V3_AltCaps_Opaque_x320.png?v=1642625320",
-        p:
+        brandname:
         "HENRY ROSE",
-        h2:
+        productName:
         "Queens & Monsters Eau de Parfum",
-        h4:
+        price:
         "120"
  
     },
@@ -55,14 +55,14 @@ var fragranceData=[
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/HenryRose_WebImages_FloraCarnivora_2000x2000_Opaque_720x.png?v=1642625452",
 
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/Henry_Rose_Aug21_Spray_Windows_Down_R_2000x2000_V3_AltCaps_Opaque_x320.png?v=1642625416",
 
-        p:
+        brandname:
         "HENRY ROSE",
-        h2:
+        productName:
         "Windows Down Eau de Parfum",
-        h4:
+        price:
         "  120"
  
     },
@@ -73,14 +73,14 @@ var fragranceData=[
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/HR_FINEFRAGRANCE_DARKISNIGHT_OG_720x.png?v=1642625299",
 
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/Henry_Rose_Aug21_Spray_Dark_Is_Night_R_2000x2000_V3_AltCaps_Opaque_x320.png?v=1642625423",
         
-        p:
+        brandname:
         "HENRY ROSE",
-        h2:
+        productName:
         "Dark is Night Eau de Parfum",
-        h4:
+        price:
         " 120"
  
     },
@@ -91,13 +91,13 @@ var fragranceData=[
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/APRESBottle_720x.jpg?v=1643763570",
 
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/APRES50mlbottle_box_x320.jpg?v=1643775219",
-        p:
+        brandname:
         "Ellis Brooklyn",
-        h2:
+        productName:
         "APRÈS Eau De Parfum",
-        h4:
+        price:
         " 105"
  
     },
@@ -107,14 +107,14 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/HR_FINEFRAGRANCE_JAKE_SHOUSE_720x.png?v=1642625315",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/Henry_Rose_Aug21_Spray_Jake_sHouse_R_2000x2000_V3_AltCaps_Transparent_x320.png?v=1642625341",
 
-        p:
+        brandname:
         "Henry Rose",
-        h2:
+        productName:
         "Jake's House Eau de Parfum",
-        h4:
+        price:
         " 120"
  
     },
@@ -124,14 +124,14 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/20201112_30189_StackB-Edit_99_9e97c99d-3bb7-4ac3-8ff3-d611b9ea89b7_720x.jpg?v=1632157373",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/20201112_30281_StackB-Edit_37_879ef251-a283-4892-a490-5f82039fd86f_x320.jpg?v=1632157369",
-        p:
+        brandname:
 
         "Le Paradis",
-        h2:
+        productName:
         "Bora Bora Candle",
-        h4:
+        price:
         "75"
  
     },
@@ -141,13 +141,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/SALT_720x.jpg?v=1585856168",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/CK8A1351_x320.jpg?v=1585871082",
-        p:
+        brandname:
         "ELLIS BROOKLYN",
-        h2:
+        productName:
         "Salt Eau de Parfum",
-        h4:
+        price:
         " 105"
  
     },
@@ -155,15 +155,15 @@ var fragranceData=[
     {
         id:10,
  
-        image2:
+        image2_url:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/hanami_10mL_gallery-5_x320.jpg?v=1568907090",
         image:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/phlur_eau_de_parfum_sandara_at_credo_beauty_720x.jpg?v=1568907090",
-        p:
+        brandname:
         "PHLUR",
-        h2:
+        productName:
         "Hanami Eau de Parfum",
-        h4:
+        price:
         " 105"
  
     },
@@ -173,13 +173,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/No-4_720x.png?v=1588715201",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/PerfumeOil4BoisdeBalincourt_x320.png?v=1588715222",
-        p:
+        brandname:
         "Maison Louis Marie",
-        h2:
+        productName:
         "No.04 Bois de Balincourt Perfume Oil",
-        h4:
+        price:
         " 59"
  
     },
@@ -189,13 +189,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/190920_ABBOTT_33417-2_1080_720x.jpg?v=1579545705",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/190920_ABBOTT_33431_1080_x320.jpg?v=1579545714",
-        p:
+        brandname:
         "ABBOTT",
-        h2:
+        productName:
         "Abbott Exploration Set",
-        h4:
+        price:
         " 29"
  
     },
@@ -205,13 +205,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/2.WEST_bottle_web_720x.jpg?v=1570212572",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/CK8A5734_x320.jpg?v=1574603988",
-        p:
+        brandname:
         "ELLIS BROOKLYN",
-        h2:
+        productName:
         "West Eau de Parfum",
-        h4:
+        price:
         " 105"
  
     },
@@ -221,13 +221,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/MaisonLouisMarie_Discovery_720x.png?v=1596496268",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/DiscoverySet_vialsonly_x320.jpg?v=1596496264",
-        p:
+        brandname:
         "MAISON LOUIS MARIE",
-        h2:
+        productName:
         "Maison Louis Marie Perfume Oil Discovery Set",
-        h4:
+        price:
         " 49"
  
     },
@@ -236,15 +236,15 @@ var fragranceData=[
     {
         id:15,
  
-        image2:
+        image2_url:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/Fragrance_01copy_x320.jpg?v=1631226115",
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/dedcool_fragrance_1_at_credo_beauty_1_x320.jpg?v=1583427841",
-        p:
+        brandname:
         "DEDCOOL",
-        h2:
+        productName:
         "Fragrance 01 Taunt: Bergamot/Amber/Vanilla",
-        h4:
+        price:
         " 90"
  
     },
@@ -254,13 +254,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/SWEET_720x.jpg?v=1585960896",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/CK8A0583_x320.jpg?v=1585960883",
-        p:
+        brandname:
         "ELLIS BROOKLYN",
-        h2:
+        productName:
         "Sweet Eau de Parfum",
-        h4:
+        price:
         " 105"
  
     },
@@ -268,15 +268,15 @@ var fragranceData=[
     {
         id:17,
  
-        image2:
+        image2_url:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/image003.jpg_92_x320.jpg?v=1604977144",
         image:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/image004_x320.jpg?v=1604977164",
-        p:
+        brandname:
         "BY ROSIE JANE",
-        h2:
+        productName:
         "7-Day Detox Fragrance Discovery Set",
-        h4:
+        price:
         " 25"
  
     },
@@ -286,13 +286,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/BEEbox_bottle_720x.jpg?v=1615848110",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/IMG_6464_x320.jpg?v=1615848040",
-        p:
+        brandname:
         "ELLIS BROOKLYN",
-        h2:
+        productName:
         "BEE Eau de Parfum",
-        h4:
+        price:
         "105"
  
     },
@@ -300,15 +300,15 @@ var fragranceData=[
     {
         id:19,
  
-        image2:
+        image2_url:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/RROSE_Mood2_x320.jpg?v=1627519679",
         image:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/ellis_brooklyn_eau_de_parfum_rrose_at_credo_beauty_x320.jpg?v=1547503086",
-        p:
+        brandname:
         "ELLIS BROOKLYN",
-        h2:
+        productName:
         "RRose Eau de Parfum",
-        h4:
+        price:
         " 105"
  
     },
@@ -316,15 +316,15 @@ var fragranceData=[
     {
         id:20,
  
-        image2:
+        image2_url:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/SUPERAMBER_Body2_x320.jpg?v=1629846570",
         image:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/SUPERAMBERBottle_x320.jpg?v=1629846528",
-        p:
+        brandname:
         "ELLIS BROOKLYN",
-        h2:
+        productName:
         "Super Amber Eau de Parfum",
-        h4:
+        price:
         " 105"
  
     },
@@ -332,15 +332,15 @@ var fragranceData=[
     {
         id:21,
  
-        image2:
+        image2_url:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/EllisBrooklyn_FAWN_Mood5_x320.jpg?v=1627519617",
         image:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/ellis_brooklyn_eau_de_parfum_fawn_at_credo_beauty_x320.jpg?v=1547518885",
-        p:
+        brandname:
         "ELLIS BROOKLYN",
-        h2:
+        productName:
         "Fawn Eau de Parfum",
-        h4:
+        price:
         " 105"
  
     },
@@ -350,13 +350,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/Flooid_new_7.2019_720x.jpg?v=1563820517",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/Flooid_Credo_12_720x.jpg?v=1569508605",
-        p:
+        brandname:
         "NON GENDER SPECIFIC",
-        h2:
+        productName:
         "Flooid Fragrance",
-        h4:
+        price:
         "  48"
  
     },
@@ -364,15 +364,15 @@ var fragranceData=[
     {
         id:23,
  
-        image2:
+        image2_url:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/MidnightToker15ml_x320.jpg?v=1585334160",
         image:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/17hereticmidnighttokeratcredobeauty_x320.jpg?v=1603147908",
-        p:
+        brandname:
         "HERETIC",
-        h2:
+        productName:
         "Midnight Toker Eau de Parfum",
-        h4:
+        price:
         "185"
  
     },
@@ -382,13 +382,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/DirtyVanilla_15ml_720x.jpg?v=1598484593",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/DirtyVanillaIngredients2_7e4c3aa0-50c9-424f-9c1e-b145400f3e20_x320.jpg?v=1602041989",
-        p:
+        brandname:
         "HERETIC",
-        h2:
+        productName:
         "Dirty Vanilla Eau de ParfumMYTH Eau de Parfum",
-        h4:
+        price:
         " 65"
  
     },
@@ -396,15 +396,15 @@ var fragranceData=[
     {
         id:25,
         
-        image2:
+        image2_url:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/STStars_720x.jpg?v=1621378608",
         image:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/Sandalwood_Temple_x320.jpg?v=1621378537",
-        p:
+        brandname:
         "SANA JARDIN",
-        h2:
+        productName:
         "Sandalwood Temple Eau De Parfum",
-        h4:
+        price:
         " 145"
  
     },
@@ -414,13 +414,13 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/BRJ_ROSIE_EDP_seamless_720x.jpg?v=1603758072",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/BRJ_ROSIE_travel_white_1080_x320.jpg?v=1600132035",
-        p:
+        brandname:
         "BY ROSIE JANE",
-        h2:
+        productName:
         "Rosie Eau de Parfum",
-        h4:
+        price:
         " 55"
  
     },
@@ -428,15 +428,15 @@ var fragranceData=[
     {
         id:27,
  
-        image2:
+        image2_url:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/1U6A1621_720x.jpg?v=1631226165",
         image:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/dedcool_layering_fragrance_milk_at_credo_beauty_x320.jpg?v=1582609754",
-        p:
+        brandname:
         "DEDCOOL",
-        h2:
+        productName:
         "MILK Layering Fragrance",
-        h4:
+        price:
         " 90"
  
     },
@@ -446,20 +446,20 @@ var fragranceData=[
  
         image:
         "https://cdn.shopify.com/s/files/1/0637/6147/products/ellis_brooklyn_eau_de_parfum_scifi_at_credo_beauty_720x.jpg?v=1547518879",
-        image2:
+        image2_url:
         " https://cdn.shopify.com/s/files/1/0637/6147/products/SCIFIMood_x320.jpg?v=1627519574",
-        p:
+        brandname:
         "ELLIS BROOKLYN",
-        h2:
+        productName:
         "Sci Fi Eau de Parfum",
-        h4:
+        price:
         "105"
  
     },
  
   ]
 
- var fragranceArr = JSON.parse(localStorage.getItem("fragranceData")) || [];
+ var fragranceArr = JSON.parse(localStorage.getItem("makeupData")) || [];
    
      displayData(fragranceData); 
 
@@ -484,22 +484,22 @@ var fragranceData=[
     
         if (selected == "low") {
           fragranceData.sort(function (a, b) {
-            return a.h4 - b.h4;
+            return a.price - b.price;
           });
         }
         if (selected == "high") {
           fragranceData.sort(function (a, b) {
-            return b.h4 - a.h4;
+            return b.price - a.price;
           });
         }
         if (selected == "A") {
           fragranceData.sort(function (a, b) {
-            return a.h2.charCodeAt(0) - b.h2.charCodeAt(0);
+            return a.productName.charCodeAt(0) - b.productName.charCodeAt(0);
           });
         }
         if (selected == "Z") {
           fragranceData.sort(function (a, b) {
-            return b.h2.charCodeAt(0) - a.h2.charCodeAt(0);
+            return b.productName.charCodeAt(0) - a.productName.charCodeAt(0);
           });
         }
         displayData(fragranceData);
@@ -517,7 +517,7 @@ var fragranceData=[
     image.setAttribute("id","photo")
 
     image.addEventListener("mouseenter", function () {
-        image.src = elem.image2;
+        image.src = elem.image2_url;
       });
 
       image.addEventListener("mouseout", function () {
@@ -529,11 +529,11 @@ var fragranceData=[
     para.setAttribute("class","Adjust")
 
     var prodName= document.createElement("h3");
-    prodName.innerText=elem.h2
+    prodName.innerText=elem.productName
     prodName.setAttribute("class","Adjust")
 
     var prodPrice= document.createElement("h4");
-    prodPrice.innerText=elem.h4
+    prodPrice.innerText=elem.price
     prodPrice.setAttribute("class","Adjust")
     
     var btn=document.createElement("div");
@@ -578,7 +578,7 @@ function addtocart(elem)
 {
     fragranceArr.push(elem);
 
-    localStorage.setItem("fragranceData",JSON.stringify(fragranceArr))
+    localStorage.setItem("makeupData",JSON.stringify(fragranceArr))
 }
 
     

@@ -1,116 +1,119 @@
-#sticky{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-       top: 0;
-       background-color: #fff;
-  }
+       /* -------------------navbar start -----------------*/
+       #sticky{
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+           top: 0;
+           background-color: #fff;
+      }
 
 
 
-.chngeanimation {
-     height: 40px;
-     width: 100%;
-     margin-top: 0px;
-     overflow: hidden;
-     font-family: "Poppins", sans-serif;
-     background-color: teal;
-   }
-   .chngeanimation {
-     font-size: 15px;
-     font-weight: 600;
-     color: rgb(238, 231, 231);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   .chngeanimation::after {
-     content: " ";
-     color: #fff;
-     background-color: #418993;
-     animation: textrotate 2s linear infinite;
-     -webkit-animation: textrotate 2s linear infinite;
-   }
-   @keyframes textrotate {
-     0% {
-       content: "In-Store and Online Use Card: CLEAN10 For 10% OFF 1st purchase | details ";
-     }
-    
-     100% {
-       content: "Free Shiping over $50 | Refer a freind and get $10";
-     }
-    }
+    .AnimationPart {
+         height: 40px;
+         width: 100%;
+         margin-top: 0px;
+         overflow: hidden;
+         font-family: "Poppins", sans-serif;
+         background-color: teal;
+       }
+       .AnimationPart {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 17px;
+         font-weight: 550;
+         color: rgb(226, 215, 215);
+        
+       }
+       .AnimationPart::after {
+         content: " ";
+         color: white;
+         background-color: teal;
+         animation: textrotate 2s linear infinite;
+         -webkit-animation: textrotate 2s linear infinite;
+       }
+       @keyframes textrotate {
+         0% {
+           content: "In-Store and Online Use Card: CLEAN10 For 10% OFF 1st purchase || details ";
+         }
+         100% {
+           content: "Free Shiping over $50 | Refer a freind and get $10";
+         }
+        }
 
-    .navBar {
-    width: 100%;
-    height: 110px;
-    border: 1 px solid red;
-  }
-  #upper1 {
-    width: 100%;
-    height: 70px;
+        .NavigationBar {
+        width: 100%;
+        height: 110px;
+        border: 3 px solid red;
+      }
+      #upper1 {
+        display: grid;
+        grid-template-columns: 2fr 4fr 2fr;
 
-    display: grid;
-    grid-template-columns: 1fr 1.8fr 1fr;
-    justify-content: center;
-    align-items: center;
-  } 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75px;
 
-  #lefttext {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+        
+      } 
 
-  #lefttext > div:hover {
-    color: #be6274;
-    border-bottom: 2px solid #be6274;
-  }
-  #lefttext > div {
-    padding: 8px;
-  }
-  #righttext {
-    margin: 5px;
-    color: gray;
-  }
-  #righttext > button {
-    border: 0px;
-  }
-  #middle1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+      #lefttext {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-  #lower {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: 0.25px solid rgb(220, 218, 218);
-    border-top: 0.25px solid rgb(220, 218, 218);
-  }
-  #lower > div {
-    padding: 10px;
-    font-weight: 600;
-  }
-  #lower > div:last-child {
-    color: #418993;
-  }
-  #lower > div:hover {
-    color: #be6274;
-    border-bottom: 2px solid #be6274;
-  }
-  #logod {
-    height: 70px;
-  }
-  i{
-      cursor: pointer;
-  }
-  #sticky:hover{
-    cursor: pointer;
-  }
+      #lefttext > div:hover {
+        color: brown;
+        border-bottom: 2px solid brown;
+      }
+      #lefttext > div {
+        padding: 8px;
+      }
+      #righttext {
+        margin: 6px;
+        color: gray;
+      }
+      #righttext > button {
+        border: 2px;
+      }
+      #middle1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #lower {
+        width: 100%;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+      }
+      #lower > div {
+        padding: 10px;
+        font-weight: 650;
+      }
+      #lower > div:last-child {
+        color: teal;
+      }
+      #lower > div:hover {
+        color: brown;
+        border-bottom: 2px solid brown;
+      }
+      #logocenter {
+        height: 72px;
+      }
+
+      i{
+         margin-left: 12px;
+          cursor: pointer;
+      }
+
 
   #header{
       color: #418993;

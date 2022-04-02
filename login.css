@@ -186,3 +186,219 @@ h4{
 .signupdirectory{
     text-decoration: none;
 }
+
+#masai{
+  height:500px;
+  width:100%;
+  background-color:black;
+  padding:20px;
+  }
+  .i{
+      color:white;
+      margin-left:40px;
+      margin-top:50px;
+      padding:20px;
+      font-weight:bold;
+  }
+  #footer{
+      color:white;
+      width:60%;
+      height:40vh;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-left:370px;
+  }
+  #footer-1{
+      display:flex;
+      flex-direction:column;
+      margin-right:20px;
+      margin-top:-50px;
+      
+  }
+  #footer-1 h3{
+      margin-bottom: 15px;
+
+  }
+  #footer-1 a{
+      color:white;
+      text-decoration:none;
+      margin-bottom:12px;
+      font-size:15px;
+  }
+  #footer-2{
+      display:flex;
+      flex-direction:column;
+      margin-right:20px;
+      margin-top:-50px;
+  }
+  #footer-2 h3{
+      margin-bottom: 15px;
+
+  }
+  #footer-2 a{
+      color:white;
+      text-decoration:none;
+      margin-bottom:12px;
+      font-size:15px;
+  }
+  #footer-3{
+      display:flex;
+      flex-direction:column;
+      margin-right:20px;
+      margin-top:-50px;
+      
+  }
+  #footer-3 h3{
+      margin-bottom: 15px;
+
+  }
+  #footer-3 a{
+      color:white;
+      text-decoration:none;
+      margin-bottom:12px;
+      font-size:15px;
+  }
+  #footer-4{
+      display:flex;
+      flex-direction:column;
+      margin-top:-270px;
+      margin-left:560px;
+  }
+  #footer-4 h4{
+      margin-bottom: 15px;
+
+  }
+  #footer-4 a{
+      color:white;
+      text-decoration:none;
+      margin-bottom:10px;
+      font-size:15px;
+  }
+  #pkhaja{
+      color:white;
+      margin-top:40px;
+      font-weight:bold;
+      margin-left:105px;
+      font-size:15px;
+  }
+  .skhaja{
+      color:rgb(29, 134, 29);
+  }
+  #footer-5{
+      margin-top:140px;
+      margin-left:520px;
+      display:flex;
+      flex-direction:row;
+      margin-right:10px;
+      
+  }
+  .fa-cc-amex{
+      padding:10px;
+      color:aqua;
+      font-size:32px;
+      width:10px;
+      border:none;
+      margin-top:-100px;
+      
+      
+  }
+  .fa-apple-pay{
+     background-color:white;
+     font-size:20px;
+     height:18px;
+     margin-left:35px;
+     padding:5px;
+     margin-top:-88px;
+     border-radius:2px;
+  }
+  .fa-cc-discover{
+      color:orange;
+     font-size:30px;
+     height:40px;
+     margin-left:18px;
+     margin-top:-88px;
+     border-radius:2px;
+  }
+  .fa-vimeo-v{
+      background-color:rgb(21, 103, 226);
+      color:white;
+      margin-left:17px;
+      width:30px;
+      height:17px;
+      text-align:center;
+      padding:5px;
+      border-radius:2px;
+      margin-top:-86px;
+  }
+  .fa-pied-piper-pp{
+      color:white;
+      margin-left:17px;
+      width:50px;
+      font-size:30px;
+      margin-top:-88px;
+  }
+  .fa-cc-visa{
+      color:white;
+      width:35px;
+      font-size:31px;
+      margin-left:-8px;
+      margin-top:-88px;
+  }
+  #ikhaja{
+      
+      background-color:black;
+      margin-left:10px;
+      border:none;
+      font-weight:bold;
+      
+  }
+  #ikhaja::placeholder{
+      color:white;
+  }
+  .fa-solid{
+      color:white;
+      font-size:12px;
+  }
+  hr{
+      width:16%;
+      margin-left:250px;
+  }
+  .fa-instagram{
+      color:white;
+      margin-top:20px;
+      margin-left:160px;
+  }
+  .fa-facebook-f{
+      color:white;
+      margin-left:15px;
+  }
+  .fa-twitter{
+      color:white;
+      margin-left:15px;
+  }
+  .fa-youtube{
+      color:white;
+      margin-left:14px;
+  }
+  .imgkhaja{
+      margin-top:-50rem;
+      padding-bottom:230px;
+      padding-left:35px;
+  }      
+  #footer-1 a:hover{
+      color:red;
+      transition:0.3s ease-out;
+  } 
+  #footer-2 a:hover{
+      color:red;
+      transition:0.3s ease-out;
+  } 
+  #footer-3 a:hover{
+      color:red;
+      transition:0.3s ease-out;
+  } 
+  #footer-4 a:hover{
+      color:red;
+      transition:0.3s ease-out;
+  } 

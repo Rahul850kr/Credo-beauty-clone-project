@@ -468,7 +468,7 @@ var fragranceData=[
         var selected = document.querySelector("#s1").value;
         if (selected != 0) {
           var filteredbrandList = fragranceData.filter(function (elem) {
-            return elem.p == selected;
+            return elem.brandname == selected;
           });
         }
         if (selected == 0) {

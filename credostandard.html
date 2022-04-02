@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            text-align: center;
+        }
+        #podd{
+            color: blueviolet;
+            color: #bd6076;
+            font-size: 35px;
+        }
+        #peven{
+            font-size: 25px;
+        }
+        #btn{
+            font-size: 30px;
+            border: none;
+            background-color: white;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
 
+<script>
+
+   var image = document.createElement("img")
+   image.src="https://cdn.shopify.com/s/files/1/0637/6147/files/f-inal-clean-seal_3x_250x_c9f926e2-30fd-421e-ad43-59145eacdd7b_260x.png?v=1578658779";
+
+   var p1 = document.createElement("p")
+   p1.textContent="Always Clean."
+   p1.setAttribute("id","podd")
+
+   var p2 = document.createElement("p")
+   p2.textContent="All products are formulated without the found on The Dirty List™."
+   p2.setAttribute("id","peven")
+
+   var p3 = document.createElement("p")
+   p3.textContent="Product Integrity."
+   p3.setAttribute("id","podd")
+
+   
+   var p4 = document.createElement("p")
+   p4.textContent="All products have documentation for ingredient authenticity and proof of claims. No surprises."
+   p4.setAttribute("id","peven")
+
+   var p5 = document.createElement("p")
+   p5.textContent="Cruelty Free."
+   p5.setAttribute("id","podd")
+
+   var p6 = document.createElement("p")
+   p6.textContent="All products are cruelty-free and are not tested on animals. Period."
+   p6.setAttribute("id","peven")
+
+   var learnmore = document.createElement("button")
+   learnmore.textContent="LEARN MORE"
+   learnmore.setAttribute("id","btn")
+
+     document.querySelector("#container").append(image,p1,p2,p3,p4,p5,p6,learnmore);
+
+</script>

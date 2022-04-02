@@ -42,6 +42,8 @@
         content: "Free Shiping over $50 | Refer a freind and get $10";
     }
 }
+#sticky:hover{
+    cursor: pointer;}
 
 .navBar {
     width: 100%;

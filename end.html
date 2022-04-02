@@ -5,226 +5,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/0935a16103.js" crossorigin="anonymous"></script>
+    
     <script
-    src="https://kit.fontawesome.com/7b63b22604.js" crossorigin="anonymous" > 
+    src="https://kit.fontawesome.com/7b63b22604.js" crossorigin="anonymous"  > 
         </script>
-    <style>
-        body{
-            background-image:url("https://res.cloudinary.com/clearforme/image/upload/v1634748236/pkmjx9jumkz9midk6o6l.jpg");
-            background-repeat:no-repeat;
-            background-attachment:fixed;
-            background-size:100%;
-        }
-        #a{
-            text-align:center;
-            font-size:60px;
-            margin-top:-10px;
 
-        }
-        #b{
-            text-align:center;
-            margin-top:-65px;
-            margin-left:300px;
-            color:grey;
-        }
-        .x{
-            font-size:30px;
-        }
-        #c{
-            font-size:25px;
-            margin-left:250px;
-            margin-top:230px;
-        
-            
-        }
-        #n{
-            margin-left:75px;
-            width:500px;
-            height:50px;
-            padding:10px;
-            border:none;
-            appearance:none;
-            color:grey;
-            font-size:20px;
-        }
-        #d{
-            font-size:25px;
-            margin-left:250px;
-        
-            
-        }
-        #m{
-            margin-left:56px;
-            width:500px;
-            height:50px;
-            padding:10px;
-            border:none;
-            appearance:none;
-            color:grey;
-            font-size:20px;
-        }
-        #e{
-            font-size:25px;
-            margin-left:250px;
-        
-            
-        }
-        #o{
-            margin-left:56px;
-            width:500px;
-            height:50px;
-            padding:10px;
-            border:none;
-            appearance:none;
-            color:grey;
-            font-size:20px;
-        }
-        
-        button{
-            color:white;
-            background-color:teal;
-            border:none;
-            padding:13px;
-            font-weight:bold;
-            width:170px;
-            font-size:20px;
-            margin-left:482px;
-            cursor:pointer;
-        }
-        .fas{
-            position:absolute;
-            font-size:17px;
-            margin-left:-28px;
-            margin-top:17px;
-            color:grey;
-            cursor:pointer;
-        }
-        #sticky{
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-           top: 0;
-           background-color: #fff;
-      }
+
+   
+    <style>
+
+#sticky{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+       top: 0;
+       background-color: #fff;
+  }
 
 
 
 .chngeanimation {
-         height: 40px;
-         width: 100%;
-         margin-top: 0px;
-         overflow: hidden;
-         font-family: "Poppins", sans-serif;
-         background-color: teal;
-       }
-       .chngeanimation {
-         font-size: 15px;
-         font-weight: 600;
-         color: rgb(238, 231, 231);
-         display: flex;
-         justify-content: center;
-         align-items: center;
-       }
-       .chngeanimation::after {
-         content: " ";
-         color: #fff;
-         background-color: #418993;
-         animation: textrotate 2s linear infinite;
-         -webkit-animation: textrotate 2s linear infinite;
-       }
-       @keyframes textrotate {
-         0% {
-           content: "In-Store and Online Use Card: CLEAN10 For 10% OFF 1st purchase | details ";
-         }
-         50% {
-           content: "";
-         }
-         100% {
-           content: "Free Shiping over $50 | Refer a freind and get $10";
-         }
+     height: 40px;
+     width: 100%;
+     margin-top: 0px;
+     overflow: hidden;
+     font-family: "Poppins", sans-serif;
+     background-color: teal;
+   }
+   .chngeanimation {
+     font-size: 15px;
+     font-weight: 600;
+     color: rgb(238, 231, 231);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .chngeanimation::after {
+     content: " ";
+     color: #fff;
+     background-color: #418993;
+     animation: textrotate 2s linear infinite;
+     -webkit-animation: textrotate 2s linear infinite;
+   }
+   @keyframes textrotate {
+     0% {
+       content: "In-Store and Online Use Card: CLEAN10 For 10% OFF 1st purchase | details ";
+     }
+    
+     100% {
+       content: "Free Shiping over $50 | Refer a freind and get $10";
+     }
+    }
+
+    .navBar {
+    width: 100%;
+    height: 110px;
+    border: 1 px solid red;
+  }
+  #upper1 {
+    width: 100%;
+    height: 70px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 1fr;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  #lefttext {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #lefttext > div:hover {
+    color: #be6274;
+    border-bottom: 2px solid #be6274;
+  }
+  #lefttext > div {
+    padding: 8px;
+  }
+  #righttext {
+    margin: 5px;
+    color: gray;
+  }
+  #righttext > button {
+    border: 0px;
+  }
+  #middle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #lower {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.25px solid rgb(220, 218, 218);
+    border-top: 0.25px solid rgb(220, 218, 218);
+  }
+  #lower > div {
+    padding: 10px;
+    font-weight: 600;
+  }
+  #lower > div:last-child {
+    color: #418993;
+  }
+  #lower > div:hover {
+    color: #be6274;
+    border-bottom: 2px solid #be6274;
+  }
+  #logod {
+    height: 70px;
+  }
+  i{
+      cursor: pointer;
+  }
+  #sticky:hover{
+    cursor: pointer;
+  }
+
+
+         #sticky:hover{
+                cursor: pointer;
+            }
+        #container{
+            
+            height: 600px;
+            border: 1px solid red;
+            margin: auto;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            background-color: green;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
         }
-        #sticky:hover{
-    cursor: pointer;}
 
-        .navBar {
-        width: 100%;
-        height: 110px;
-        border: 1 px solid red;
-      }
-      #upper1 {
-        width: 100%;
-        height: 70px;
-
-        display: grid;
-        grid-template-columns: 1fr 1.8fr 1fr;
-        justify-content: center;
-        align-items: center;
-      } 
-
-      #lefttext {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
-
-      #lefttext > div:hover {
-        color: #be6274;
-        border-bottom: 2px solid #be6274;
-      }
-      #lefttext > div {
-        padding: 8px;
-      }
-      #righttext {
-        margin: 5px;
-        color: gray;
-      }
-      #righttext > button {
-        border: 0px;
-      }
-      #middle1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #lower {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: 0.25px solid rgb(220, 218, 218);
-        border-top: 0.25px solid rgb(220, 218, 218);
-      }
-      #lower > div {
-        padding: 10px;
-        font-weight: 600;
-      }
-      #lower > div:last-child {
-        color: #418993;
-      }
-      #lower > div:hover {
-        color: #be6274;
-        border-bottom: 2px solid #be6274;
-        
-      }
-      #logod {
-        height: 70px;
-      }
-      i{
-          cursor: pointer;
-      }
-        
-
+        #container::after{
+            content: " ";
+            color: white;
+            font-size: 80px;
+            image-resolution: 30px ;
+            animation: t 3s linear infinite;
+            -webkit-animation: t 3s linear infinite;
+        }
+       
+        @keyframes t{
+            0%{
+                content: "Order placed !!"
+            }
+            100%{
+                content: "Thank you for shopping with us !";
+            }
+        }
+        #backhome{
+            margin-top: 20px;
+            padding: 20px 30px;
+            background-color: #00263e;
+            color: white;
+            border: none;
+            font-size: 25px;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+        #backhome:hover{
+            color: #00263e;
+            background-color: white;
+            border: 1px solid #00263e;
+            cursor: pointer;
+        }
     </style>
-
-
 
 </head>
 <body>
-    <!-- navbar -->
-       
+
+         
     <div id="sticky">
         <div class="chngeanimation">
             <h1 class="textchange"></h1>
@@ -266,7 +224,7 @@
                 <div onclick="window.location.href='makeup.html'">Makeup</div>
                 <div onclick="window.location.href='hairs.html'">Hair</div>
                 <div onclick="window.location.href='#'">Bath & Body</div>
-                <div onclick="window.location.href='Fragrance.html'">Fragrance</div>
+                <div onclick="window.location.href='Fragrance.html'">Frangance</div>
                 <div onclick="window.location.href='#'">Gift</div>
                 <div onclick="window.location.href='#'">Sale</div>
                 <div onclick="window.location.href='#'">Featured</div>
@@ -274,29 +232,15 @@
               </div>
             </div>
         </div>
-    <!-- navbar -->
     
-    <p id="a">Credo Product Finder</p>
-    <p id="b">powered by <span class="x">ClearForMe`</span></p>
+         <!--navbar end   -->
     
-    <form>
-    <p id="c">I'm looking for:<span><select id="n">
-        <option>Select a category</option>
-        <option>hair style</option>
-        <option>Makeup</option>
-        <option>skin care</option>
-    </select><i class="fas fa-search"></i></span></p>
 
-    <p id="d">I want to include:<span><select id="m">
-        <option>Type any ingrediants</option>
-    </select><i class="fas fa-search"></i></span></p>
+    <div id="navbar"></div>
 
-    <p id="e">I want to exclude:<span><select id="o">
-        <option>Type any ingrediants</option>
-    </select><i class="fas fa-search"></i></span></p>
-     
-    <button>Find</button> 
-</form>
+    <div id="container"></div>
+
+     <center><a href="home.html"><button id="backhome">Back to Homepage</button></a></center>
 
 </body>
 </html>

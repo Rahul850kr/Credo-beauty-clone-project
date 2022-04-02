@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divimg{
+            width: 80%;
+            height: 300px;
+            margin-right: 20px;
+            margin: auto;
 
+        }
+        #vcont{
+            /* border: 2px solid red; */
+            margin: auto;
+        }
+        #container1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        #container1>div{
+            text-align: center;
+            font-family: sans-serif;
+            letter-spacing: 2.6px;
+            /* font-weight: bold; */
+            font-size: 20px;
+            position: relative;
+            width: auto;
+
+        }
+        div>p:hover{
+            cursor: pointer;
+            color: #418993;
+        }
+        .outer{
+            position: relative;
+            height: 100%;
+            width: 30%;
+        }
+        .outer img,.inner img{
+            width: 100%;
+
+        }
+        .inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none; 
+
+        }
+        .outer:hover .inner{
+            display: block;
+        }
+        img{
+            width: 100%;
+            cursor: pointer;
+        }
+        h1{
+            background-color:#fda388 ;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="vcont"></div>
+    <h1>BESTSELLER</h1>
+    <div id="container1">
+        
+        <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/BFF_Swatch_x320.jpg?v=1624315540" alt="">
+           <div class="inner">
+              <a href="hairs.html"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/BFF_x540.jpg?v=1624315489" alt=""></a> 
+           </div>
+        <p>Light Show Color Melt Multi-Use Pigment<br>$ 22</p>  
+         </div>
+        <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/04_Red-Orange_Swatch_White_x320.png?v=1647483710" alt="">
+           <div class="inner">
+               <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/01_Red-Orange_Open_Whitecopy_x320.png?v=1647483649" alt="">
+           </div>
+           <p>High Fidelity Balancing Color Corrector <br>$ 27</p>
+       </div>
+        <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/960x960exabeforeafter270rebeccaatcredobeauty_x320.jpg?v=1627315149" alt="">
+           <div class="inner">
+               <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/exafoundation270-rebeccaatcredobeauty_x320.jpg?v=1627315142" alt="">
+           </div>
+           <p>High Fidelity Fooundation<br>$38</p>
+       </div>
+        <div class="outer"><img src="https://cdn.shopify.com/s/files/1/0637/6147/products/Exa-Primer-Smear_x320.jpg?v=1596291053" alt="">
+           <div class="inner">
+               <img src="https://cdn.shopify.com/s/files/1/0637/6147/products/EXA_Primer_Soldier-NoShadow_x320.png?v=1596290980" alt="">
+           </div>
+           <p>Jump Start Smoothing Primer <br> $34  </p>
+       </div>
+    </div>
+</body>
+</html>
+
+<script>
+     var h2 = document.createElement("h1")
+   h2.textContent="ABOUT THE BRAND"
+   h2.style.background="#fda388"
+   h2.style.textAlign="center"
+   h2.style.color="gray"
+
+   var div = document.createElement("div")
+   
+     var v = document.createElement("video")
+   v.setAttribute("src","https://cdn.shopify.com/videos/c/vp/c6e3d8ddad4d4bbf94c66c9beebaade8/c6e3d8ddad4d4bbf94c66c9beebaade8.HD-1080p-7.2Mbps.mp4");
+   v.setAttribute("width", "1300");
+  v.setAttribute("height", "240");
+  
+  v.setAttribute("controls", "controls");
+
+  div.append(v)
+
+  
+
+  var img2=document.createElement("img")
+   img2.src="https://dxkmbl8uwuv9p.cloudfront.net/next-world/1596209700822/e4f2cc89-ba24-4e95-865b-68a4166cebe9/Exa-Logo-Web-Peach.png"
+   img2.setAttribute("id","divimg")
+
+  var h3 = document.createElement("h3")
+  h3.textContent="ABOUT EXA"
+  h3.style.background="#fda388"
+  
+
+  
+
+   var p1 = document.createElement("p")
+  p1.textContent="The name Exa comes from the decimal unit prefix 10¹⁸ (1,000,000,000,000,000,000) because Exa's range is big, their impact is bigger and they're at the max on inclusivity. Why try to fit in--when you were born to stand out? Exa takes the world’s most potent plants and magnifies their elements to create clean beauty that’s positively charged. Exa believes in clean makeup with extended frequency in colors for every human with packaging that's designed to be as eco-as-possible.Exa donates a percentage of proceeds to Women’s Voices for the Earth, an organization that amplifies women’s voices to eliminate the chemicals that harm our health and our communities.Get free shipping on orders $50+  "
+  p1.style.fontFamily="sans-serif";
+  p1.style.fontSize="20px"
+  p1.style.marginTop="8px"
+  p1.style.color="gray"
+
+  document.querySelector("#vcont").append(h2,img2,div)
+  document.querySelector("body").append(h3,p1)
+
+
+</script>

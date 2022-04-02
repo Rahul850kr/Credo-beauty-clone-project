@@ -260,10 +260,15 @@
 }
 
 #masai{
-  height:500px;
-  width:100%;
-  background-color:black;
-  padding:18px;
+    height:510px;
+    width:auto;
+    background-color:black;
+    padding: 15px;
+    padding-top: 20px;
+    margin-top: 20px;
+    
+    margin-left: -150px;
+    
   }
   .i{
       color:white;

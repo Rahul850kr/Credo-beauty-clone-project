@@ -1,4 +1,3 @@
-/* -------------------navbar start -----------------*/
 #sticky {
     position: -webkit-sticky;
     /* Safari */
@@ -127,6 +126,8 @@ i {
     margin-left: 12px;
     cursor: pointer;
 }
+
+/* -------------------navbar end -----------------*/
 
 
 img {

@@ -50,6 +50,8 @@ Screenshots
 ![Screenshot (573)](https://user-images.githubusercontent.com/57911117/161436625-ea4ccff0-bc29-49b7-8d2f-6920599f382a.png)
 
 Roles And Responsibility
+
+
 •	Github Repository Created By Rahul Kumar
 •	Readme File Created by Shubham C Randive
 •	Home Page Created by Gourav Sahu
@@ -62,9 +64,11 @@ Roles And Responsibility
 •	Signup Page Created by Rahul Kumar
 •	Footer and Login Page Created by Khaja Moinuddin
 
-What We Learned
-1 The Collabration with others
-2 Matching The Thinking and considering everyons Prespective
-3 Always have a plan of action
-4 Critical Thinking and Always having backup plan
-5 Always There is something new to learn and grow
+What We Learned:-
+
+
+1. The Collabration with others
+2. Matching The Thinking and considering everyons Prespective
+3. Always have a plan of action
+4. Critical Thinking and Always having backup plan
+5. Always There is something new to learn and grow

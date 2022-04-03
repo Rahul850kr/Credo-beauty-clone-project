@@ -525,7 +525,7 @@ var fragranceData=[
       });
 
     var para= document.createElement("p");
-    para.innerText=elem.p
+    para.innerText=elem.brandname
     para.setAttribute("class","Adjust")
 
     var prodName= document.createElement("h3");

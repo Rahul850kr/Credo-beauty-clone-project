@@ -136,45 +136,6 @@ i {
     font-size: 40px;
 }
 
-#ptaghome {
-    margin-left: 150px;
-    margin-bottom: 25px;
-}
-
-#homedirect {
-    text-decoration: none;
-    color: black;
-}
-
-#homedirect:hover {
-    color: #418993;
-}
-
-.commonfilter {
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-#sortbybrand {
-    margin-left: 150px;
-}
-
-#itemcount {
-    font-weight: bolder;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.clearfilter {
-    margin-left: 10px;
-    color: black;
-}
-
-#sortrelevant {
-    margin-left: 240px;
-
-}
-
 #container {
     width: 80%;
 
@@ -191,45 +152,6 @@ i {
 
 }
 
-#btn {
-    display: flex;
-    margin-left: 100px;
-
-}
-
-#btn>button {
-    background-color: white;
-    color: #be6274;
-    border: 0px;
-    border-radius: 3px;
-    margin: 5px;
-    width: 40px;
-    height: 40px;
-}
-
-#btn>button:hover {
-    background-color: #be6274;
-    color: white;
-}
-
-#loadmore {
-    margin-top: 50px;
-    height: 60px;
-    width: 300px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #00263e;
-    color: white;
-    border: none;
-}
-
-#loadmore:hover {
-    color: #00263e;
-    background-color: white;
-    cursor: pointer;
-    border: 1px solid #00263e;
-}
-
 #lowerhead {
     background-color: #be6274;
     color: white;
@@ -240,14 +162,6 @@ i {
     font-size: 25px;
     font-weight: bold;
     margin-top: 45px;
-}
-
-#para {
-    width: 65%;
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 30px;
-    font-size: 18px;
 }
 
 #masai {
@@ -500,9 +414,4 @@ hr {
 #footer-4 a:hover {
     color: red;
     transition: 0.3s ease-out;
-}
-
-img {
-    height: 150px;
-    width: 150px;
 }

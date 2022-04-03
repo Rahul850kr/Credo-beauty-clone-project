@@ -129,52 +129,6 @@ i {
 }
 
 
-#header {
-    color: #418993;
-    margin-left: 150px;
-    margin-top: 50px;
-    font-size: 40px;
-}
-
-#ptaghome {
-    margin-left: 150px;
-    margin-bottom: 25px;
-}
-
-#homedirect {
-    text-decoration: none;
-    color: black;
-}
-
-#homedirect:hover {
-    color: #418993;
-}
-
-.commonfilter {
-    padding: 3px;
-    box-sizing: border-box;
-}
-
-#sortbybrand {
-    margin-left: 150px;
-}
-
-#itemcount {
-    font-weight: bolder;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-.clearfilter {
-    margin-left: 10px;
-    color: black;
-}
-
-#sortrelevant {
-    margin-left: 240px;
-
-}
-
 #container {
     width: 80%;
 

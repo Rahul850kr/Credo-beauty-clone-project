@@ -53,16 +53,27 @@ Roles And Responsibility
 
 
 •	Github Repository Created By Rahul Kumar
+
 •	Readme File Created by Shubham C Randive
+
 •	Home Page Created by Gourav Sahu
+
 •	Navigation Bar created by Vivek Goswami
+
 •	 Makeup page Created By Rahul Kumar
+
 •	 Hair Product Page created by Vivek Goswami
+
 •	 Fragrance product page created by Varun Tiwari
+
 •	Cart Page Created By Shubham C Randive
+
 •	Payemnt and Otp Page created By Shubham C Randive
+
 •	Signup Page Created by Rahul Kumar
+
 •	Footer and Login Page Created by Khaja Moinuddin
+
 
 What We Learned:-
 
